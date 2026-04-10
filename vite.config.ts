@@ -4,8 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
-  // Setting base to the repository name for GitHub Pages
-  base: '/printing-press/',
+  // Custom domain serves from root, no subpath needed
+  base: '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
