@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { MessageCircle, ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
@@ -10,17 +10,25 @@ import { ProductCard } from '@/components/ProductCard';
 import { FilterChips } from '@/components/FilterChips';
 import { PageHero } from '@/components/PageHero';
 import { EmptyState } from '@/components/EmptyState';
+import { ScrollRevealCard } from '@/components/ScrollRevealCard';
 import { getCategoryBySlug } from '@/data/categories';
 import { getFAQsByCategory } from '@/data/faqs';
 import { getProductsByCategory } from '@/utils/products';
 import { buildDefaultWhatsAppUrl } from '@/utils/whatsapp';
 import { useSEO } from '@/utils/seo';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 import type { CategoryKey } from '@/types';
 
 export function CategoryPage() {
   const { slug } = useParams<{ slug: string }>();
   const category = slug ? getCategoryBySlug(slug) : undefined;
   const [activeFilter, setActiveFilter] = useState('all');
+  const containerRef = useScrollReveal<HTMLDivElement>();
+
+  // Reset filter to 'all' every time the category changes
+  useEffect(() => {
+    setActiveFilter('all');
+  }, [slug]);
 
   if (!category) {
     return <EmptyState type="not-found" />;
@@ -50,7 +58,7 @@ export function CategoryPage() {
   });
 
   return (
-    <div>
+    <div ref={containerRef}>
       <PageHero
         title={category.name}
         subtitle={category.description}
@@ -93,8 +101,10 @@ export function CategoryPage() {
 
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {filteredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+            {filteredProducts.map((product, index) => (
+              <ScrollRevealCard key={product.id} delay={index * 65}>
+                <ProductCard product={product} />
+              </ScrollRevealCard>
             ))}
           </div>
         ) : (

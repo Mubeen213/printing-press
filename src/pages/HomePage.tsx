@@ -34,6 +34,7 @@ import { getProductsByCategory } from '@/utils/products';
 import { buildDefaultWhatsAppUrl } from '@/utils/whatsapp';
 import { useSEO } from '@/utils/seo';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
+import { ScrollRevealCard } from '@/components/ScrollRevealCard';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   MapPin, Package, Rocket, PartyPopper, Palette, MessageCircle, Sliders, Zap,
@@ -106,8 +107,10 @@ export function HomePage() {
           subtitle="Browse our product categories and find exactly what your business, event, or celebration needs."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {categories.map((cat) => (
-            <CategoryCard key={cat.key} category={cat} />
+          {categories.map((cat, index) => (
+            <ScrollRevealCard key={cat.key} delay={index * 60}>
+              <CategoryCard category={cat} />
+            </ScrollRevealCard>
           ))}
         </div>
       </SectionWrapper>
@@ -160,13 +163,14 @@ export function HomePage() {
                   }
                 />
                 <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide">
-                  {catProducts.map((product) => (
-                    <div
+                  {catProducts.map((product, index) => (
+                    <ScrollRevealCard
                       key={product.id}
+                      delay={index * 80}
                       className="w-[85vw] sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1rem)] shrink-0 snap-center"
                     >
                       <ProductCard product={product} />
-                    </div>
+                    </ScrollRevealCard>
                   ))}
                 </div>
               </Container>
@@ -212,32 +216,33 @@ export function HomePage() {
           subtitle="Whether you're a startup, school, hotel, or planning a wedding — we've got you covered."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-          {audienceSolutions.map((solution) => {
+          {audienceSolutions.map((solution, index) => {
             const Icon = iconMap[solution.icon] || Package;
             return (
-              <Link
-                key={solution.id}
-                to={`/category/${solution.categoryKeys[0]}`}
-                className="group bg-surface rounded-xl overflow-hidden border border-border-light shadow-card hover:shadow-card-hover transition-all"
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={solution.image}
-                    alt={solution.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Icon className="w-4 h-4 text-primary" />
-                    <h3 className="font-semibold text-text group-hover:text-primary transition-colors">
-                      {solution.title}
-                    </h3>
+              <ScrollRevealCard key={solution.id} delay={index * 70}>
+                <Link
+                  to={`/category/${solution.categoryKeys[0]}`}
+                  className="group bg-surface rounded-xl overflow-hidden border border-border-light shadow-card hover:shadow-card-hover transition-all block"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={solution.image}
+                      alt={solution.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
                   </div>
-                  <p className="text-sm text-text-secondary">{solution.description}</p>
-                </div>
-              </Link>
+                  <div className="p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Icon className="w-4 h-4 text-primary" />
+                      <h3 className="font-semibold text-text group-hover:text-primary transition-colors">
+                        {solution.title}
+                      </h3>
+                    </div>
+                    <p className="text-sm text-text-secondary">{solution.description}</p>
+                  </div>
+                </Link>
+              </ScrollRevealCard>
             );
           })}
         </div>
@@ -250,9 +255,10 @@ export function HomePage() {
           subtitle="A glimpse of what we create for our clients across Hyderabad."
         />
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-          {instagramFeed.map((item) => (
-            <div
+          {instagramFeed.map((item, index) => (
+            <ScrollRevealCard
               key={item.id}
+              delay={index * 50}
               className="aspect-square rounded-xl overflow-hidden group cursor-pointer"
             >
               <img
@@ -261,7 +267,7 @@ export function HomePage() {
                 loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
-            </div>
+            </ScrollRevealCard>
           ))}
         </div>
       </SectionWrapper>
@@ -273,8 +279,10 @@ export function HomePage() {
           subtitle="Real feedback from startups, families, schools, and businesses in Hyderabad."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((t) => (
-            <TestimonialCard key={t.id} testimonial={t} />
+          {testimonials.map((t, index) => (
+            <ScrollRevealCard key={t.id} delay={index * 80}>
+              <TestimonialCard testimonial={t} />
+            </ScrollRevealCard>
           ))}
         </div>
       </SectionWrapper>
@@ -313,8 +321,10 @@ export function HomePage() {
           }
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogPosts.slice(0, 6).map((post) => (
-            <BlogCard key={post.id} post={post} />
+          {blogPosts.slice(0, 6).map((post, index) => (
+            <ScrollRevealCard key={post.id} delay={index * 70}>
+              <BlogCard post={post} />
+            </ScrollRevealCard>
           ))}
         </div>
       </SectionWrapper>

@@ -17,6 +17,8 @@ import { getCategoryByKey } from '@/data/categories';
 import { getFAQsByIds } from '@/data/faqs';
 import { buildProductWhatsAppUrl } from '@/utils/whatsapp';
 import { useSEO } from '@/utils/seo';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
+import { ScrollRevealCard } from '@/components/ScrollRevealCard';
 
 export function ProductPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -59,9 +61,11 @@ export function ProductPage() {
     window.open(url, '_blank');
   };
 
+  const containerRef = useScrollReveal<HTMLDivElement>();
+
   return (
-    <div>
-      <section className="py-8 md:py-12">
+    <div ref={containerRef}>
+      <section className="py-8 md:py-12 reveal" style={{ transitionDelay: '100ms' }}>
         <Container>
           <Breadcrumbs
             items={[
@@ -200,7 +204,7 @@ export function ProductPage() {
 
       {/* Recommended */}
       {product.whatsappMeta?.recommendedFor && (
-        <div className="bg-surface-alt py-6">
+        <div className="bg-surface-alt py-6 reveal" style={{ transitionDelay: '200ms' }}>
           <Container>
             <div className="flex flex-wrap items-center gap-2 justify-center text-sm">
               <span className="text-text-secondary font-medium">Recommended for:</span>
@@ -220,10 +224,14 @@ export function ProductPage() {
       {/* Related Products */}
       {related.length > 0 && (
         <SectionWrapper>
-          <SectionHeader title="You Might Also Like" />
+          <div className="reveal" style={{ transitionDelay: '300ms' }}>
+            <SectionHeader title="You Might Also Like" />
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {related.map((p) => (
-              <ProductCard key={p.id} product={p} />
+            {related.map((p, index) => (
+              <ScrollRevealCard key={p.id} delay={index * 80}>
+                <ProductCard product={p} />
+              </ScrollRevealCard>
             ))}
           </div>
         </SectionWrapper>
@@ -232,8 +240,10 @@ export function ProductPage() {
       {/* FAQ */}
       {productFAQs.length > 0 && (
         <SectionWrapper bgColor="alt">
-          <SectionHeader title="Frequently Asked Questions" />
-          <div className="max-w-3xl mx-auto">
+          <div className="reveal" style={{ transitionDelay: '200ms' }}>
+            <SectionHeader title="Frequently Asked Questions" />
+          </div>
+          <div className="max-w-3xl mx-auto reveal" style={{ transitionDelay: '300ms' }}>
             <Accordion
               items={productFAQs.map((f) => ({
                 id: f.id,

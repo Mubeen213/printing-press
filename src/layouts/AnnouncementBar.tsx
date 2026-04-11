@@ -12,9 +12,9 @@ export function AnnouncementBar() {
   }, []);
 
   return (
-    <div className="bg-secondary text-white text-xs sm:text-sm py-2 relative overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-4 text-center">
-        <p className="animate-fade-in" key={currentIndex}>
+    <div className="bg-secondary text-white text-xs sm:text-sm relative overflow-hidden" style={{ height: '2rem' }}>
+      <div className="max-w-[1280px] mx-auto px-4 text-center h-full flex items-center justify-center overflow-hidden">
+        <p className="animate-announcement-swap w-full truncate" key={currentIndex}>
           {announcementMessages[currentIndex]}
         </p>
       </div>
