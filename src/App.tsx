@@ -21,8 +21,20 @@ const NotFoundPage = lazy(() => import('@/pages/NotFoundPage').then(m => ({ defa
 
 function PageLoader() {
   return (
-    <div className="flex items-center justify-center min-h-[60vh]">
-      <div className="w-8 h-8 border-4 border-primary/30 border-t-primary rounded-full animate-spin" />
+    <div className="w-full max-w-7xl mx-auto px-4 py-12 animate-pulse min-h-[60vh]">
+      {/* Skeleton Header */}
+      <div className="h-10 bg-gray-200 dark:bg-gray-800 rounded w-1/4 mb-8"></div>
+      
+      {/* Skeleton Content Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {[...Array(8)].map((_, i) => (
+          <div key={i} className="flex flex-col gap-4">
+            <div className="h-56 bg-gray-200 dark:bg-gray-800 rounded-xl w-full"></div>
+            <div className="h-4 bg-gray-200 dark:bg-gray-800 rounded w-3/4 mt-2"></div>
+            <div className="h-4 bg-gray-200 dark:bg-gray-800 rounded w-1/2"></div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
