@@ -15,7 +15,7 @@ interface EmptyStateProps {
 const defaults: Record<EmptyType, { icon: ReactNode; title: string; description: string }> = {
   cart: {
     icon: <ShoppingCart className="w-16 h-16 text-muted" />,
-    title: 'Your inquiry cart is empty',
+    title: 'Your cart is empty',
     description: 'Browse our products and add items to get a quote on WhatsApp.',
   },
   search: {

@@ -101,7 +101,7 @@ export function HomePage() {
       </section>
 
       {/* =============== CATEGORIES =============== */}
-      <SectionWrapper className="reveal">
+      {/* <SectionWrapper className="reveal">
         <SectionHeader
           title="What Are You Looking For?"
           subtitle="Browse our product categories and find exactly what your business, event, or celebration needs."
@@ -113,12 +113,12 @@ export function HomePage() {
             </ScrollRevealCard>
           ))}
         </div>
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       {/* =============== WHY CHOOSE US =============== */}
       <SectionWrapper bgColor="alt" className="reveal">
         <SectionHeader
-          title="Why Choose PrintNest?"
+          title="Why Choose PrintingFreaks?"
           subtitle="Here's what makes us Hyderabad's go-to printing partner."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

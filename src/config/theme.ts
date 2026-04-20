@@ -7,7 +7,7 @@
 
 export const themeConfig = {
   name: 'default',
-  label: 'PrintNest Default',
+  label: 'PrintingFreaks Default',
   colors: {
     primary: 'var(--color-primary)',
     primaryHover: 'var(--color-primary-hover)',

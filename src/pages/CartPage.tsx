@@ -65,7 +65,7 @@ export function CartPage() {
       <Container>
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-2xl md:text-3xl font-bold font-display text-text">
-            Inquiry Cart ({cartProducts.length})
+            Cart ({cartProducts.length})
           </h1>
           <Button variant="ghost" size="sm" onClick={clearCart} className="text-error hover:text-error">
             Clear All

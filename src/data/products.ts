@@ -1,3 +1,37 @@
+import { onesie1, onesie2, onesie3, onesie4, onesie5 } from '../assets/kids_apparels/baby_onesis';
+
+import {kidsTshirt1, kidsTshirt2, kidsTshirt3, kidsTshirt4} from '../assets/kids_apparels/kids_tshirts';
+
+import {kidsPolo1} from '../assets/kids_apparels/kids_polo';
+
+// Events solutions
+import { rollUp1, rollUp2, rollUp3 } from '../assets/event_solutions/roll_ups';
+import { banner1, banner2 } from '@/assets/event_solutions/banners';
+import { wallpaper1, wallpaper2, wallpaper3 } from '@/assets/event_solutions/wallpaper';
+
+
+// Bags
+import { backpacks1 } from '../assets/bags/backpacks';
+import { beachBags1 } from '../assets/bags/beach_bags';
+import { cottonBags1 } from '../assets/bags/cotton_bags';
+import { juteBags1 } from '../assets/bags/jute_bags';
+import { nonWovenBags1 } from '../assets/bags/non_woven_bags';
+import { recycledCottonBags1 } from '../assets/bags/recycled_cotton_bags';
+import { toteBags1 } from '../assets/bags/tote_bags';
+
+// Corporate Gifts
+import { bottles1, bottles2, bottles3, bottles4, bottles5, bottles6 } from '../assets/corporate_gifts/bottles';
+import { coasters1, coasters2 } from '../assets/corporate_gifts/coasters';
+import { mugs1, mugs2, mugs3, mugs4, mugs5, mugs6, mugs7, mugs8, mugs9, mugs10 } from '../assets/corporate_gifts/mugs';
+
+// Clothing Apparels
+import { aprons1 } from '../assets/clothing_apparels/aprons';
+import { hoodies1, hoodies2, hoodies3 } from '../assets/clothing_apparels/hoodies';
+import { poloShirts1 } from '../assets/clothing_apparels/polo_shirts';
+import { safetyJackets1 } from '../assets/clothing_apparels/safety_jackets';
+import { sweatShirts1 } from '../assets/clothing_apparels/sweat_shirts';
+import { tShirts1, tShirts2, tShirts3, tShirts4, tShirts5, tShirts6, tShirts7, tShirts8, tShirts9, tShirts10 } from '../assets/clothing_apparels/t_shirts';
+
 import type { Product } from '@/types';
 
 export const products: Product[] = [
@@ -427,12 +461,8 @@ export const products: Product[] = [
     shortDescription: 'High-quality custom T-shirts for teams, events, and promotions.',
     description:
       'Premium custom T-shirts with vibrant printing. Perfect for corporate teams, college events, promotions, and personal use. Multiple fabric options and sizes available in Hyderabad.',
-    image: 'https://placehold.co/600x400/2563eb/ffffff?text=T-Shirts',
-    gallery: [
-      'https://placehold.co/800x600/2563eb/ffffff?text=T-Shirts+1',
-      'https://placehold.co/800x600/1d4ed8/ffffff?text=T-Shirts+2',
-      'https://placehold.co/800x600/3b82f6/ffffff?text=T-Shirts+3',
-    ],
+    image: tShirts1,
+    gallery: [tShirts2, tShirts3, tShirts4, tShirts5, tShirts6, tShirts7, tShirts8, tShirts9, tShirts10],
     relatedProductIds: ['clothing-002', 'clothing-003', 'clothing-004'],
     featured: true,
     bestseller: true,
@@ -461,11 +491,8 @@ export const products: Product[] = [
     shortDescription: 'Custom polo shirts perfect for corporate and team wear.',
     description:
       'Professional polo shirts with embroidered or printed logos. Ideal for corporate uniforms, hotel staff, and team branding in Hyderabad.',
-    image: 'https://placehold.co/600x400/2563eb/ffffff?text=Polo+Shirts',
-    gallery: [
-      'https://placehold.co/800x600/2563eb/ffffff?text=Polo+1',
-      'https://placehold.co/800x600/1d4ed8/ffffff?text=Polo+2',
-    ],
+    image: poloShirts1,
+    gallery: [poloShirts1],
     relatedProductIds: ['clothing-001', 'clothing-003'],
     featured: true,
     badge: 'bulk',
@@ -485,8 +512,8 @@ export const products: Product[] = [
     shortDescription: 'Custom hoodies for teams, events, and casual branding.',
     description:
       'Cozy custom hoodies with your design or logo. Perfect for tech teams, college clubs, and winter events. High-quality fabric and printing.',
-    image: 'https://placehold.co/600x400/2563eb/ffffff?text=Hoodies',
-    gallery: ['https://placehold.co/800x600/2563eb/ffffff?text=Hoodies+1'],
+    image: hoodies1,
+    gallery: [hoodies2, hoodies3],
     relatedProductIds: ['clothing-001', 'clothing-004'],
     newArrival: true,
     badge: 'new',
@@ -505,8 +532,8 @@ export const products: Product[] = [
     shortDescription: 'Custom sweatshirts for teams and casual wear.',
     description:
       'Premium sweatshirts with custom printing or embroidery. Great for team uniforms, tech companies, and casual events.',
-    image: 'https://placehold.co/600x400/2563eb/ffffff?text=Sweat+Shirts',
-    gallery: ['https://placehold.co/800x600/2563eb/ffffff?text=Sweatshirt+1'],
+    image: sweatShirts1,
+    gallery: [sweatShirts1],
     relatedProductIds: ['clothing-003', 'clothing-001'],
     price: 899,
     minQty: 10,
@@ -523,8 +550,8 @@ export const products: Product[] = [
     shortDescription: 'Custom safety jackets with reflective printing and branding.',
     description:
       'High-visibility safety jackets with custom branding. Essential for construction, logistics, and field teams. Compliant with safety standards.',
-    image: 'https://placehold.co/600x400/2563eb/ffffff?text=Safety+Jackets',
-    gallery: ['https://placehold.co/800x600/2563eb/ffffff?text=Safety+1'],
+    image: safetyJackets1,
+    gallery: [safetyJackets1],
     relatedProductIds: ['clothing-006', 'clothing-002'],
     price: 799,
     minQty: 25,
@@ -541,8 +568,8 @@ export const products: Product[] = [
     shortDescription: 'Custom aprons for restaurants, cafés, and cooking events.',
     description:
       'Professional custom aprons with your logo. Perfect for restaurants, cafés, bakeries, and cooking events in Hyderabad. Durable fabrics with vibrant printing.',
-    image: 'https://placehold.co/600x400/2563eb/ffffff?text=Aprons',
-    gallery: ['https://placehold.co/800x600/2563eb/ffffff?text=Aprons+1'],
+    image: aprons1,
+    gallery: [aprons1],
     relatedProductIds: ['clothing-002', 'clothing-001'],
     price: 449,
     minQty: 10,
@@ -563,14 +590,14 @@ export const products: Product[] = [
     shortDescription: 'Custom polo shirts designed for kids and school uniforms.',
     description:
       'Quality polo shirts sized for children. Perfect for school uniforms, sports teams, and events. Comfortable fabrics with durable printing.',
-    image: 'https://placehold.co/600x400/8b5cf6/ffffff?text=Kids+Polo',
-    gallery: ['https://placehold.co/800x600/8b5cf6/ffffff?text=Kids+Polo+1'],
+    image: kidsPolo1,
+    gallery: [kidsPolo1],
     relatedProductIds: ['kids-002', 'kids-003'],
     featured: true,
     badge: 'bulk',
-    price: 399,
-    minQty: 20,
-    defaultQty: 50,
+    price: 599,
+    minQty: 1,
+    defaultQty: 2,
     localSEOKeyword: 'kids uniform printing Hyderabad',
     tags: ['school', 'uniforms', 'kids'],
     whatsappMeta: { leadType: 'apparel' },
@@ -584,14 +611,14 @@ export const products: Product[] = [
     shortDescription: 'Colorful custom T-shirts for kids and school events.',
     description:
       'Bright, fun custom T-shirts for children. Perfect for school events, birthday parties, and family occasions. Soft fabrics safe for sensitive skin.',
-    image: 'https://placehold.co/600x400/8b5cf6/ffffff?text=Kids+T-Shirts',
-    gallery: ['https://placehold.co/800x600/8b5cf6/ffffff?text=Kids+Tees+1'],
+    image: kidsTshirt1,
+    gallery: [kidsTshirt2, kidsTshirt4],
     relatedProductIds: ['kids-001', 'kids-003'],
     bestseller: true,
     badge: 'bestseller',
-    price: 299,
-    minQty: 10,
-    defaultQty: 25,
+    price: 499,
+    minQty: 1,
+    defaultQty: 2,
     tags: ['school', 'fun', 'kids'],
     whatsappMeta: { leadType: 'apparel' },
   },
@@ -604,14 +631,14 @@ export const products: Product[] = [
     shortDescription: 'Custom printed onesies for babies and newborns.',
     description:
       'Adorable custom onesies for babies. Perfect for baby showers, birth announcements, and custom gifts. Soft, comfortable fabric safe for newborns.',
-    image: 'https://placehold.co/600x400/8b5cf6/ffffff?text=Baby+Onesies',
-    gallery: ['https://placehold.co/800x600/8b5cf6/ffffff?text=Onesies+1'],
+    image: onesie1,
+    gallery: [ onesie3,  onesie5],
     relatedProductIds: ['kids-001', 'kids-002'],
     newArrival: true,
     badge: 'new',
-    price: 449,
-    minQty: 5,
-    defaultQty: 10,
+    price: 499,
+    minQty: 1,
+    defaultQty: 2,
     tags: ['baby', 'gifts', 'personal'],
     whatsappMeta: { leadType: 'general' },
   },
@@ -628,11 +655,8 @@ export const products: Product[] = [
     shortDescription: 'Custom cotton tote bags for retail, events, and promotions.',
     description:
       'Eco-friendly custom tote bags with your branding. Perfect for retail stores, corporate events, and promotional campaigns in Hyderabad. Durable cotton construction.',
-    image: 'https://placehold.co/600x400/059669/ffffff?text=Tote+Bags',
-    gallery: [
-      'https://placehold.co/800x600/059669/ffffff?text=Tote+1',
-      'https://placehold.co/800x600/047857/ffffff?text=Tote+2',
-    ],
+    image: toteBags1,
+    gallery: [toteBags1],
     relatedProductIds: ['bags-002', 'bags-004', 'bags-005'],
     featured: true,
     bestseller: true,
@@ -660,8 +684,8 @@ export const products: Product[] = [
     shortDescription: 'Sustainable jute bags with custom printing for your brand.',
     description:
       'Premium jute bags with eco-friendly appeal and custom branding. Perfect for green businesses, organic stores, and corporate gifting in Hyderabad.',
-    image: 'https://placehold.co/600x400/059669/ffffff?text=Jute+Bags',
-    gallery: ['https://placehold.co/800x600/059669/ffffff?text=Jute+1'],
+    image: juteBags1,
+    gallery: [juteBags1],
     relatedProductIds: ['bags-001', 'bags-003'],
     price: 249,
     minQty: 50,
@@ -678,8 +702,8 @@ export const products: Product[] = [
     shortDescription: 'Budget-friendly non-woven bags with custom prints.',
     description:
       'Cost-effective non-woven bags with vibrant custom printing. Great for trade shows, retail packaging, and mass promotional campaigns.',
-    image: 'https://placehold.co/600x400/059669/ffffff?text=Non+Woven+Bags',
-    gallery: ['https://placehold.co/800x600/059669/ffffff?text=NonWoven+1'],
+    image: nonWovenBags1,
+    gallery: [nonWovenBags1],
     relatedProductIds: ['bags-001', 'bags-005'],
     badge: 'bulk',
     price: 99,
@@ -697,8 +721,8 @@ export const products: Product[] = [
     shortDescription: 'Eco-friendly recycled cotton bags with custom branding.',
     description:
       'Sustainable recycled cotton bags that showcase your commitment to the environment. Premium feel with custom branding options.',
-    image: 'https://placehold.co/600x400/059669/ffffff?text=Recycled+Cotton',
-    gallery: ['https://placehold.co/800x600/059669/ffffff?text=Recycled+1'],
+    image: recycledCottonBags1,
+    gallery: [recycledCottonBags1],
     relatedProductIds: ['bags-001', 'bags-002'],
     newArrival: true,
     badge: 'new',
@@ -717,8 +741,8 @@ export const products: Product[] = [
     shortDescription: 'Custom cotton bags for events, retail, and promotions.',
     description:
       'High-quality cotton bags perfect for promotional campaigns, events, and retail branding. Full-color printing with durable stitching.',
-    image: 'https://placehold.co/600x400/059669/ffffff?text=Promo+Cotton+Bags',
-    gallery: ['https://placehold.co/800x600/059669/ffffff?text=Promo+1'],
+    image: cottonBags1,
+    gallery: [cottonBags1],
     relatedProductIds: ['bags-001', 'bags-003'],
     price: 179,
     minQty: 100,
@@ -735,8 +759,8 @@ export const products: Product[] = [
     shortDescription: 'Custom beach-ready tote bags for summer promotions.',
     description:
       'Spacious tote bags perfect for beach events, summer promotions, and resort branding. Water-resistant options available.',
-    image: 'https://placehold.co/600x400/059669/ffffff?text=Beach+Bags',
-    gallery: ['https://placehold.co/800x600/059669/ffffff?text=Beach+1'],
+    image: beachBags1,
+    gallery: [beachBags1],
     relatedProductIds: ['bags-001', 'bags-004'],
     price: 349,
     minQty: 25,
@@ -753,8 +777,8 @@ export const products: Product[] = [
     shortDescription: 'Custom backpacks for corporate gifts and events.',
     description:
       'Branded backpacks perfect for corporate gifting, school programs, and team events. Practical, durable, and fully customizable.',
-    image: 'https://placehold.co/600x400/059669/ffffff?text=Backpacks',
-    gallery: ['https://placehold.co/800x600/059669/ffffff?text=Backpacks+1'],
+    image: backpacks1,
+    gallery: [backpacks1],
     relatedProductIds: ['bags-001', 'corporate-004'],
     price: 799,
     minQty: 10,
@@ -775,11 +799,8 @@ export const products: Product[] = [
     shortDescription: 'Custom printed mugs for corporate gifting and promotions.',
     description:
       'Premium ceramic mugs with custom printing. Perfect for corporate gifts, employee welcome kits, and promotional giveaways. Microwave and dishwasher safe.',
-    image: 'https://placehold.co/600x400/0891b2/ffffff?text=Mugs',
-    gallery: [
-      'https://placehold.co/800x600/0891b2/ffffff?text=Mugs+1',
-      'https://placehold.co/800x600/0e7490/ffffff?text=Mugs+2',
-    ],
+    image: mugs1,
+    gallery: [mugs2, mugs3, mugs4, mugs5, mugs6, mugs7, mugs8, mugs9, mugs10],
     relatedProductIds: ['corporate-002', 'corporate-003', 'corporate-005'],
     featured: true,
     bestseller: true,
@@ -807,8 +828,8 @@ export const products: Product[] = [
     shortDescription: 'Custom branded water bottles for corporate and sports events.',
     description:
       'Premium water bottles with custom branding. Stainless steel and BPA-free plastic options. Perfect for corporate gifting, sports events, and wellness campaigns.',
-    image: 'https://placehold.co/600x400/0891b2/ffffff?text=Water+Bottles',
-    gallery: ['https://placehold.co/800x600/0891b2/ffffff?text=Bottles+1'],
+    image: bottles1,
+    gallery: [bottles2, bottles3, bottles4, bottles5, bottles6],
     relatedProductIds: ['corporate-001', 'corporate-003'],
     featured: true,
     price: 499,
@@ -867,8 +888,8 @@ export const products: Product[] = [
     shortDescription: 'Custom coasters for offices, cafes, and events.',
     description:
       'Custom coasters with your logo or design. Perfect for office desks, cafés, restaurants, and promotional events. Available in cork, wood, and acrylic.',
-    image: 'https://placehold.co/600x400/0891b2/ffffff?text=Coasters',
-    gallery: ['https://placehold.co/800x600/0891b2/ffffff?text=Coasters+1'],
+    image: coasters1,
+    gallery: [coasters2],
     relatedProductIds: ['corporate-001', 'office-004'],
     price: 149,
     minQty: 25,
@@ -998,21 +1019,18 @@ export const products: Product[] = [
     shortDescription: 'Retractable roll-up banners for events and promotions.',
     description:
       'Professional retractable roll-up banners. Easy to set up, carry, and store. Perfect for trade shows, exhibitions, retail, and corporate events in Hyderabad.',
-    image: 'https://placehold.co/600x400/dc2626/ffffff?text=Roll+Ups',
-    gallery: [
-      'https://placehold.co/800x600/dc2626/ffffff?text=Roll+Ups+1',
-      'https://placehold.co/800x600/b91c1c/ffffff?text=Roll+Ups+2',
-    ],
+    image: rollUp1,
+    gallery: [rollUp2, rollUp3],
     relatedProductIds: ['event-002', 'event-003', 'event-004'],
     featured: true,
     bestseller: true,
     badge: 'bestseller',
-    price: 1499,
-    originalPrice: 1999,
-    discountLabel: '25% off on 5+ banners',
+    price: 1999,
+    originalPrice: 2999,
+    discountLabel: '5% off on 10+ banners',
     minQty: 1,
     maxQty: 100,
-    defaultQty: 2,
+    defaultQty: 1,
     localSEOKeyword: 'roll up banner printing Hyderabad',
     tags: ['events', 'exhibitions', 'retail'],
     whatsappMeta: {
@@ -1029,12 +1047,13 @@ export const products: Product[] = [
     subtitle: 'Big impact, bold messaging',
     shortDescription: 'Custom banners for indoor and outdoor events.',
     description:
-      'High-quality custom banners for indoor and outdoor use. Weather-resistant materials with vibrant full-color printing. Perfect for store fronts, events, and campaigns.',
-    image: 'https://placehold.co/600x400/dc2626/ffffff?text=Banners',
-    gallery: ['https://placehold.co/800x600/dc2626/ffffff?text=Banners+1'],
+      'High-quality custom banners for indoor and outdoor use. Weather-resistant materials with vibrant full-color printing. Perfect for store fronts, events, and campaigns. Note: Price per sq ft 49.9',
+    image: banner1,
+    gallery: [banner2],
+    firstTimeOffer: 'Get 10% off on 10 banners',
     relatedProductIds: ['event-001', 'event-003'],
     featured: true,
-    price: 999,
+    price: 1599,
     minQty: 1,
     defaultQty: 3,
     tags: ['outdoor', 'events', 'storefronts'],
@@ -1056,25 +1075,6 @@ export const products: Product[] = [
     minQty: 1,
     defaultQty: 2,
     tags: ['retail', 'displays', 'promotions'],
-    whatsappMeta: { leadType: 'events' },
-  },
-  {
-    id: 'event-004',
-    slug: 'flags',
-    categoryKey: 'event-solutions',
-    title: 'Flags',
-    subtitle: 'Wave your brand high',
-    shortDescription: 'Custom printed flags for outdoor branding and events.',
-    description:
-      'Custom flags for outdoor events, storefronts, and promotional campaigns. Feather flags, teardrop flags, and rectangular flags available.',
-    image: 'https://placehold.co/600x400/dc2626/ffffff?text=Flags',
-    gallery: ['https://placehold.co/800x600/dc2626/ffffff?text=Flags+1'],
-    relatedProductIds: ['event-001', 'event-002'],
-    badge: 'bulk',
-    price: 899,
-    minQty: 1,
-    defaultQty: 2,
-    tags: ['outdoor', 'events', 'storefronts'],
     whatsappMeta: { leadType: 'events' },
   },
   {
@@ -1106,8 +1106,8 @@ export const products: Product[] = [
     shortDescription: 'Custom wallpaper for offices, stores, and events.',
     description:
       'Custom printed wallpaper for office interiors, retail stores, and event spaces. Transform any wall into a branded statement.',
-    image: 'https://placehold.co/600x400/dc2626/ffffff?text=Wallpaper',
-    gallery: ['https://placehold.co/800x600/dc2626/ffffff?text=Wallpaper+1'],
+    image: wallpaper1,
+    gallery: [wallpaper2, wallpaper3],
     relatedProductIds: ['event-005', 'event-002'],
     newArrival: true,
     badge: 'new',

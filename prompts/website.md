@@ -7,7 +7,7 @@ The website must NOT copy printsouq.ae directly. Instead, it should take inspira
 ==================================================
 
 Brand:
-- Use placeholder brand name: "PrintNest Hyderabad"
+- Use placeholder brand name: "PrintingFreaks Hyderabad"
 - Make brand name, logo, colors, and theme fully configurable from a single theme/config file
 - The logo must be replaceable later without touching layout code
 - English only for now

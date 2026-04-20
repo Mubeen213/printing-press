@@ -2,7 +2,7 @@ import type { SiteConfig, NavItem } from '@/types';
 
 export const siteConfig: SiteConfig = {
   brand: {
-    name: 'PrintNest Hyderabad',
+    name: 'PrintingFreaks Hyderabad',
     tagline: 'Custom Printing, Apparel & Gifting for Hyderabad',
     logo: '/logo.svg',
     shortDescription:
@@ -13,10 +13,10 @@ export const siteConfig: SiteConfig = {
     defaultMessage: 'Hello! I would like to know more about your printing services in Hyderabad.',
   },
   seo: {
-    defaultTitle: 'PrintNest Hyderabad — Custom Printing, Apparel & Gifting',
+    defaultTitle: 'PrintingFreaks Hyderabad — Custom Printing, Apparel & Gifting',
     defaultDescription:
       'Custom printing services in Hyderabad. Business cards, wedding invites, T-shirts, corporate gifts, banners & more. Get a quote on WhatsApp.',
-    titleTemplate: '%s | PrintNest Hyderabad',
+    titleTemplate: '%s | PrintingFreaks Hyderabad',
   },
   cta: {
     primaryLabel: 'Get Quote on WhatsApp',

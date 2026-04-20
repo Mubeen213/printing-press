@@ -77,11 +77,11 @@ export function ProductPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Gallery */}
             <div>
-              <div className="aspect-[4/3] rounded-xl overflow-hidden bg-surface-alt mb-4">
+              <div className="aspect-square rounded-xl overflow-hidden bg-surface-alt mb-4 p-4 md:p-8">
                 <img
                   src={allImages[selectedImage]}
                   alt={product.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src =
                       'https://placehold.co/800x600/e2e8f0/94a3b8?text=Image';
@@ -98,7 +98,7 @@ export function ProductPage() {
                         selectedImage === i ? 'border-primary' : 'border-border-light'
                       }`}
                     >
-                      <img src={img} alt="" className="w-full h-full object-cover" />
+                      <img src={img} alt="" className="w-full h-full object-contain p-1" />
                     </button>
                   ))}
                 </div>
@@ -167,7 +167,7 @@ export function ProductPage() {
                   onClick={handleAddToCart}
                   className={addedToCart ? 'bg-success hover:bg-success' : ''}
                 >
-                  {addedToCart ? 'Added to Inquiry!' : inCart ? 'Update Inquiry' : 'Add to Inquiry Cart'}
+                  {addedToCart ? 'Added to Cart!' : inCart ? 'Update Cart' : 'Add to Cart'}
                 </Button>
                 <Button
                   variant="whatsapp"

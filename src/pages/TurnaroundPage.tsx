@@ -27,7 +27,7 @@ const iconMap: Record<string, LucideIcon> = {
 export function TurnaroundPage() {
   useSEO({
     title: 'Turnaround & Ordering Info',
-    description: 'Learn how ordering works at PrintNest Hyderabad. Simple WhatsApp-driven process.',
+    description: 'Learn how ordering works at PrintingFreaks Hyderabad. Simple WhatsApp-driven process.',
   });
 
   return (

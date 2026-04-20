@@ -9,7 +9,7 @@ import { useSEO } from '@/utils/seo';
 export function FAQPage() {
   useSEO({
     title: 'Frequently Asked Questions',
-    description: 'Find answers to common questions about PrintNest Hyderabad — delivery, bulk orders, design support, and more.',
+    description: 'Find answers to common questions about PrintingFreaks Hyderabad — delivery, bulk orders, design support, and more.',
   });
 
   const globalFAQs = faqs.filter((f) => f.global);

@@ -135,7 +135,7 @@ export const offerBanner = {
 
 export const aboutContent = {
   mission:
-    'At PrintNest, we believe every brand deserves great print. Whether you\'re a startup launching your first business cards or a family planning a beautiful wedding, we\'re here to make it happen — affordably, responsively, and locally.',
+    'At PrintingFreaks, we believe every brand deserves great print. Whether you\'re a startup launching your first business cards or a family planning a beautiful wedding, we\'re here to make it happen — affordably, responsively, and locally.',
   whoWeServe:
     'We serve startups, local businesses, schools, hotels, corporates, event organizers, and families across Hyderabad. If you need something printed, branded, or customized — we can help.',
   whyWhatsApp:
@@ -152,7 +152,7 @@ export const aboutContent = {
 
 export const turnaroundContent = {
   title: 'Turnaround & Ordering Info',
-  description: 'Here\'s how ordering with PrintNest works — simple, transparent, and WhatsApp-driven.',
+  description: 'Here\'s how ordering with PrintingFreaks works — simple, transparent, and WhatsApp-driven.',
   steps: [
     {
       title: 'Browse & Select',

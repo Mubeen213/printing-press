@@ -5,7 +5,7 @@ import { useSEO } from '@/utils/seo';
 export function FileGuidePage() {
   useSEO({
     title: 'File Preparation Guide',
-    description: 'Guide for preparing print-ready files for PrintNest Hyderabad.',
+    description: 'Guide for preparing print-ready files for PrintingFreaks Hyderabad.',
   });
 
   return (

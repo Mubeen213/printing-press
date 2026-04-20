@@ -40,12 +40,12 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
     >
       <Link to={`/product/${product.slug}`} className="flex-1 flex flex-col">
         {/* Image */}
-        <div className="relative aspect-[4/3] overflow-hidden bg-surface-alt">
+        <div className="relative aspect-square overflow-hidden bg-surface-alt p-4">
           <img
             src={product.image}
             alt={product.title}
             loading="lazy"
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
             onError={(e) => {
               (e.target as HTMLImageElement).src =
                 'https://placehold.co/600x400/e2e8f0/94a3b8?text=Image+Not+Available';
