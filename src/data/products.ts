@@ -1,6 +1,6 @@
-import { onesie1, onesie2, onesie3, onesie4, onesie5 } from '../assets/kids_apparels/baby_onesis';
+import { onesie1,  onesie3,  onesie5 } from '../assets/kids_apparels/baby_onesis';
 
-import {kidsTshirt1, kidsTshirt2, kidsTshirt3, kidsTshirt4} from '../assets/kids_apparels/kids_tshirts';
+import {kidsTshirt1, kidsTshirt2, kidsTshirt4} from '../assets/kids_apparels/kids_tshirts';
 
 import {kidsPolo1} from '../assets/kids_apparels/kids_polo';
 
