@@ -11,13 +11,13 @@ import { wallpaper1, wallpaper2, wallpaper3 } from '@/assets/event_solutions/wal
 
 
 // Bags
-import { backpacks1 } from '../assets/bags/backpacks';
-import { beachBags1 } from '../assets/bags/beach_bags';
-import { cottonBags1 } from '../assets/bags/cotton_bags';
-import { juteBags1 } from '../assets/bags/jute_bags';
-import { nonWovenBags1 } from '../assets/bags/non_woven_bags';
-import { recycledCottonBags1 } from '../assets/bags/recycled_cotton_bags';
-import { toteBags1 } from '../assets/bags/tote_bags';
+import { backpacks1, backpacks2, backpacks3, backpacks4, backpacks5 } from '../assets/bags/backpacks';
+import { beachBags1, beachBags2, beachBags3 } from '../assets/bags/beach_bags';
+import { cottonBags1, cottonBags2 } from '../assets/bags/cotton_bags';
+import { juteBags1, juteBags2, juteBags3, juteBags4 } from '../assets/bags/jute_bags';
+import { nonWovenBags1, nonWovenBags2, nonWovenBags3, nonWovenBags4 } from '../assets/bags/non_woven_bags';
+import { recycledCottonBags1, recycledCottonBags2 } from '../assets/bags/recycled_cotton_bags';
+import { toteBags1, toteBags2, toteBags3, toteBags4 } from '../assets/bags/tote_bags';
 
 // Corporate Gifts
 import { bottles1, bottles2, bottles3, bottles4, bottles5, bottles6 } from '../assets/corporate_gifts/bottles';
@@ -678,7 +678,7 @@ export const products: Product[] = [
     description:
       'Eco-friendly custom tote bags with your branding. Perfect for retail stores, corporate events, and promotional campaigns in Hyderabad. Durable cotton construction.',
     image: toteBags1,
-    gallery: [toteBags1],
+    gallery: [toteBags1, toteBags2, toteBags3, toteBags4],
     relatedProductIds: ['bags-002', 'bags-004', 'bags-005'],
     featured: true,
     bestseller: true,
@@ -707,7 +707,7 @@ export const products: Product[] = [
     description:
       'Premium jute bags with eco-friendly appeal and custom branding. Perfect for green businesses, organic stores, and corporate gifting in Hyderabad.',
     image: juteBags1,
-    gallery: [juteBags1],
+    gallery: [juteBags1, juteBags2, juteBags3, juteBags4],
     relatedProductIds: ['bags-001', 'bags-003'],
     price: 249,
     minQty: 1,
@@ -726,7 +726,7 @@ export const products: Product[] = [
     description:
       'Cost-effective non-woven bags with vibrant custom printing. Great for trade shows, retail packaging, and mass promotional campaigns.',
     image: nonWovenBags1,
-    gallery: [nonWovenBags1],
+    gallery: [nonWovenBags1, nonWovenBags2, nonWovenBags3, nonWovenBags4],
     relatedProductIds: ['bags-001', 'bags-005'],
     badge: 'bulk',
     price: 99,
@@ -746,7 +746,7 @@ export const products: Product[] = [
     description:
       'Sustainable recycled cotton bags that showcase your commitment to the environment. Premium feel with custom branding options.',
     image: recycledCottonBags1,
-    gallery: [recycledCottonBags1],
+    gallery: [recycledCottonBags1, recycledCottonBags2],
     relatedProductIds: ['bags-001', 'bags-002'],
     newArrival: true,
     badge: 'new',
@@ -767,7 +767,7 @@ export const products: Product[] = [
     description:
       'High-quality cotton bags perfect for promotional campaigns, events, and retail branding. Full-color printing with durable stitching.',
     image: cottonBags1,
-    gallery: [cottonBags1],
+    gallery: [cottonBags1, cottonBags2],
     relatedProductIds: ['bags-001', 'bags-003'],
     price: 179,
     minQty: 1,
@@ -786,7 +786,7 @@ export const products: Product[] = [
     description:
       'Spacious tote bags perfect for beach events, summer promotions, and resort branding. Water-resistant options available.',
     image: beachBags1,
-    gallery: [beachBags1],
+    gallery: [beachBags1, beachBags2, beachBags3],
     relatedProductIds: ['bags-001', 'bags-004'],
     price: 349,
     minQty: 1,
@@ -805,7 +805,7 @@ export const products: Product[] = [
     description:
       'Branded backpacks perfect for corporate gifting, school programs, and team events. Practical, durable, and fully customizable.',
     image: backpacks1,
-    gallery: [backpacks1],
+    gallery: [backpacks1, backpacks2, backpacks3, backpacks4, backpacks5],
     relatedProductIds: ['bags-001', 'corporate-004'],
     price: 799,
     minQty: 1,

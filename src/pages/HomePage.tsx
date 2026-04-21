@@ -115,30 +115,6 @@ export function HomePage() {
         </div>
       </SectionWrapper> */}
 
-      {/* =============== WHY CHOOSE US =============== */}
-      <SectionWrapper bgColor="alt" className="reveal">
-        <SectionHeader
-          title="Why Choose PrintingFreaks?"
-          subtitle="Here's what makes us Hyderabad's go-to printing partner."
-        />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {whyChooseUs.map((item) => {
-            const Icon = iconMap[item.icon] || Package;
-            return (
-              <div
-                key={item.title}
-                className="bg-surface rounded-xl p-6 border border-border-light shadow-card hover:shadow-card-hover transition-all text-center"
-              >
-                <div className="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold text-text mb-2">{item.title}</h3>
-                <p className="text-sm text-text-secondary">{item.description}</p>
-              </div>
-            );
-          })}
-        </div>
-      </SectionWrapper>
 
       {/* =============== PRODUCT CATEGORY CAROUSELS =============== */}
       <div className="bg-surface-alt py-12 md:py-24 space-y-16">
@@ -229,7 +205,7 @@ export function HomePage() {
                       src={solution.image}
                       alt={solution.title}
                       loading="lazy"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 bg-white p-4"
                     />
                   </div>
                   <div className="p-4">
@@ -243,6 +219,31 @@ export function HomePage() {
                   </div>
                 </Link>
               </ScrollRevealCard>
+            );
+          })}
+        </div>
+      </SectionWrapper>
+
+        {/* =============== WHY CHOOSE US =============== */}
+      <SectionWrapper bgColor="alt" className="reveal">
+        <SectionHeader
+          title="Why Choose PrintingFreaks?"
+          subtitle="Here's what makes us Hyderabad's go-to printing partner."
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {whyChooseUs.map((item) => {
+            const Icon = iconMap[item.icon] || Package;
+            return (
+              <div
+                key={item.title}
+                className="bg-surface rounded-xl p-6 border border-border-light shadow-card hover:shadow-card-hover transition-all text-center"
+              >
+                <div className="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-text mb-2">{item.title}</h3>
+                <p className="text-sm text-text-secondary">{item.description}</p>
+              </div>
             );
           })}
         </div>

@@ -40,12 +40,12 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
     >
       <Link to={`/product/${product.slug}`} className="flex-1 flex flex-col">
         {/* Image */}
-        <div className="relative aspect-square overflow-hidden bg-surface-alt p-4">
+        <div className="relative aspect-square overflow-hidden bg-surface-alt p-4 flex items-center justify-center">
           <img
             src={product.image}
             alt={product.title}
             loading="lazy"
-            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+            className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
             onError={(e) => {
               (e.target as HTMLImageElement).src =
                 'https://placehold.co/600x400/e2e8f0/94a3b8?text=Image+Not+Available';
@@ -101,7 +101,7 @@ export function ProductCard({ product, className = '' }: ProductCardProps) {
           }`}
         >
           <ShoppingCart className="w-4 h-4" />
-          {inCart ? 'Added' : 'Add to Inquiry'}
+          {inCart ? 'Added' : 'Add to Cart'}
         </button>
         <button
           onClick={handleWhatsApp}

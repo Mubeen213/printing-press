@@ -85,7 +85,7 @@ export function CartPage() {
                   <img
                     src={item.product.image}
                     alt={item.product.title}
-                    className="w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-cover shrink-0"
+                    className="w-20 h-20 sm:w-24 sm:h-24 rounded-lg object-contain shrink-0"
                   />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">

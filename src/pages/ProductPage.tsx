@@ -77,11 +77,11 @@ export function ProductPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Gallery */}
             <div>
-              <div className="aspect-square rounded-xl overflow-hidden bg-surface-alt mb-4 p-4 md:p-8">
+              <div className="aspect-square rounded-xl overflow-hidden bg-surface-alt mb-4 p-4 md:p-8 flex items-center justify-center">
                 <img
                   src={allImages[selectedImage]}
                   alt={product.title}
-                  className="w-full h-full object-contain"
+                  className="max-w-full max-h-full object-contain"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src =
                       'https://placehold.co/800x600/e2e8f0/94a3b8?text=Image';
@@ -94,11 +94,11 @@ export function ProductPage() {
                     <button
                       key={i}
                       onClick={() => setSelectedImage(i)}
-                      className={`shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-colors cursor-pointer ${
+                      className={`shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-colors cursor-pointer flex items-center justify-center ${
                         selectedImage === i ? 'border-primary' : 'border-border-light'
                       }`}
                     >
-                      <img src={img} alt="" className="w-full h-full object-contain p-1" />
+                      <img src={img} alt="" className="max-w-full max-h-full object-contain p-1" />
                     </button>
                   ))}
                 </div>
