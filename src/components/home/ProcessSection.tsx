@@ -2,6 +2,8 @@ import { Container } from '@/components/ui/Container';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { ScrollRevealCard } from '@/components/ScrollRevealCard';
 
+import flexPrintingVideo from '@/assets/mp4/flex_printing_5s.mp4';
+
 export function ProcessSection() {
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden">
@@ -21,7 +23,7 @@ export function ProcessSection() {
                 playsInline
                 className="w-full h-full object-cover"
               >
-                <source src="/src/assets/mp4/flex_printing_5s.mp4" type="video/mp4" />
+                <source src={flexPrintingVideo} type="video/mp4" />
               </video>
               
               {/* Overlay Decoration */}
