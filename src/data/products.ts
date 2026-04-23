@@ -1,6 +1,8 @@
 
 // stationery
 import { BusinessCard1, BusinessCard2, BusinessCard3, BusinessCard4 } from '@/assets/stationery/business_cards';
+import { Flyer1, Flyer2, Flyer3, Flyer4 } from '@/assets/stationery/flyers';
+
 
 import { onesie1,  onesie3,  onesie5 } from '../assets/kids_apparels/baby_onesis';
 
@@ -87,10 +89,11 @@ export const products: Product[] = [
     shortDescription: 'High-quality flyers for marketing campaigns and promotions.',
     description:
       'Grab attention with vibrant, professional flyers. Ideal for events, product launches, restaurant menus, and promotional campaigns across Hyderabad.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Flyers',
+    image: Flyer1,
     gallery: [
-      'https://placehold.co/800x600/f97316/ffffff?text=Flyers+1',
-      'https://placehold.co/800x600/ea580c/ffffff?text=Flyers+2',
+      Flyer2,
+      Flyer3,
+      Flyer4,
     ],
     relatedProductIds: ['stationery-001', 'stationery-003', 'stationery-005'],
     featured: true,
