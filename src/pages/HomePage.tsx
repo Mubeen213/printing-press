@@ -26,7 +26,6 @@ import { getGlobalFAQs } from '@/data/faqs';
 import {
   whyChooseUs,
   audienceSolutions,
-  instagramFeed,
   offerBanner,
 } from '@/data/siteContent';
 import { getProductsByCategory } from '@/utils/products';

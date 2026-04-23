@@ -31,7 +31,10 @@ export function HeroCarousel() {
   }, []);
 
   return (
-    <section className="relative h-auto min-h-[600px] md:h-[700px] overflow-hidden bg-secondary">
+    <section 
+      className="relative h-auto min-h-[600px] md:h-[700px] overflow-hidden bg-surface-alt transition-colors duration-1000"
+      data-theme={heroSlides[currentSlide]?.theme !== 'default' ? heroSlides[currentSlide]?.theme : undefined}
+    >
       {/* Slides */}
       {heroSlides.map((slide, index) => (
         <div
@@ -45,11 +48,11 @@ export function HeroCarousel() {
             <Container className="h-full flex flex-col-reverse md:flex-row items-center gap-6 md:gap-12">
               
               {/* Text Content (Bottom on Mobile, Left on Desktop) */}
-              <div className="flex-1 text-white z-20 animate-fade-slide-in text-center md:text-left">
-                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold font-display leading-tight mb-4 md:mb-6 drop-shadow-lg">
+              <div className="flex-1 text-text z-20 animate-fade-slide-in text-center md:text-left">
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold font-display leading-tight mb-4 md:mb-6">
                   {slide.headline}
                 </h1>
-                <p className="text-sm md:text-lg text-white/90 leading-relaxed mb-6 md:mb-8 max-w-xl drop-shadow-md mx-auto md:mx-0">
+                <p className="text-sm md:text-lg text-text-secondary leading-relaxed mb-6 md:mb-8 max-w-xl mx-auto md:mx-0">
                   {slide.subheadline}
                 </p>
                 
@@ -73,7 +76,7 @@ export function HeroCarousel() {
                     return (
                       <div
                         key={chip.label}
-                        className="inline-flex items-center gap-1 px-2 py-1 md:px-3 md:py-1.5 bg-white/10 backdrop-blur-md rounded-full text-[10px] md:text-sm font-medium text-white border border-white/20 shadow-sm"
+                        className="inline-flex items-center gap-1 px-2 py-1 md:px-3 md:py-1.5 bg-surface/80 backdrop-blur-md rounded-full text-[10px] md:text-sm font-medium text-text border border-border shadow-sm"
                       >
                         <Icon className="w-3 md:w-3.5 h-3 md:h-3.5 text-primary" />
                         {chip.label}
@@ -89,10 +92,10 @@ export function HeroCarousel() {
                   <img
                     src={slideImages[slide.id] || slide.image}
                     alt={slide.headline}
-                    className="w-full h-full object-contain bg-white/5 backdrop-blur-sm"
+                    className="w-full h-full object-contain bg-surface/50 backdrop-blur-sm"
                   />
                   {/* Subtle overlay to blend */}
-                  <div className="absolute inset-0 ring-1 ring-white/20 rounded-xl md:rounded-2xl pointer-events-none" />
+                  <div className="absolute inset-0 ring-1 ring-border/50 rounded-xl md:rounded-2xl pointer-events-none" />
                 </div>
               </div>
 
@@ -100,7 +103,7 @@ export function HeroCarousel() {
           </div>
           
           {/* Subtle background gradient to tie everything together */}
-          <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/95 to-secondary-hover -z-10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-surface-alt via-surface-alt/95 to-surface -z-10" />
         </div>
       ))}
 
@@ -111,7 +114,7 @@ export function HeroCarousel() {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-2 h-2 rounded-full transition-all ${
-              index === currentSlide ? 'bg-primary w-8' : 'bg-white/50 hover:bg-white'
+              index === currentSlide ? 'bg-primary w-8' : 'bg-muted hover:bg-text-secondary'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

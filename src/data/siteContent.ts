@@ -28,18 +28,21 @@ export const heroSlides = [
     image: BannerHoodies,
     headline: 'Customized to Showcase Your Branding & Designs!',
     subheadline: 'Premium hoodies, t-shirts, and uniforms made locally in Hyderabad.',
+    theme: 'default',
   },
   {
     id: 2,
     image: BannerSwag,
     headline: "Got a Brand? We've Got Your Merch Covered!",
     subheadline: 'Complete corporate kits, welcome boxes, and branded office supplies.',
+    theme: 'corporate',
   },
   {
     id: 3,
     image: BannerEvents,
     headline: 'Branded Swag: Your Team, Your Ambassadors',
     subheadline: 'High-impact banners, standees, and signage for events and exhibitions.',
+    theme: 'festive',
   },
 ];
 
