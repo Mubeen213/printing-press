@@ -1,3 +1,7 @@
+
+// stationery
+import { BusinessCard1, BusinessCard2, BusinessCard3, BusinessCard4 } from '@/assets/stationery/business_cards';
+
 import { onesie1,  onesie3,  onesie5 } from '../assets/kids_apparels/baby_onesis';
 
 import {kidsTshirt1, kidsTshirt2, kidsTshirt4} from '../assets/kids_apparels/kids_tshirts';
@@ -48,11 +52,11 @@ export const products: Product[] = [
     shortDescription: 'Premium quality business cards with multiple paper and finish options.',
     description:
       'Create a lasting impression with our premium business cards. Choose from a variety of paper stocks, finishes, and sizes. Perfect for startups, executives, and local businesses in Hyderabad looking to make their mark.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Business+Cards',
+    image: BusinessCard1,
     gallery: [
-      'https://placehold.co/800x600/f97316/ffffff?text=Business+Cards+1',
-      'https://placehold.co/800x600/ea580c/ffffff?text=Business+Cards+2',
-      'https://placehold.co/800x600/fb923c/ffffff?text=Business+Cards+3',
+      BusinessCard2,
+      BusinessCard3,
+      BusinessCard4,
     ],
     relatedProductIds: ['stationery-002', 'stationery-003', 'stationery-004'],
     featured: true,

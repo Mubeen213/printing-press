@@ -35,6 +35,7 @@ import { buildDefaultWhatsAppUrl } from '@/utils/whatsapp';
 import { useSEO } from '@/utils/seo';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ScrollRevealCard } from '@/components/ScrollRevealCard';
+import { ProcessSection } from '@/components/home/ProcessSection';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   MapPin, Package, Rocket, PartyPopper, Palette, MessageCircle, Sliders, Zap,
@@ -155,6 +156,8 @@ export function HomePage() {
         })}
       </div>
 
+      {/* =============== OUR PROCESS =============== */}
+      <ProcessSection />
       {/* =============== OFFER BANNER =============== */}
       {offerBanner.enabled && (
         <section className="py-12 reveal">
@@ -224,7 +227,7 @@ export function HomePage() {
         </div>
       </SectionWrapper>
 
-        {/* =============== WHY CHOOSE US =============== */}
+      {/* =============== WHY CHOOSE US =============== */}
       <SectionWrapper bgColor="alt" className="reveal">
         <SectionHeader
           title="Why Choose PrintingFreaks?"
