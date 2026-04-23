@@ -8,7 +8,7 @@ import {kidsPolo1} from '../assets/kids_apparels/kids_polo';
 import { rollUp1, rollUp2, rollUp3 } from '../assets/event_solutions/roll_ups';
 import { banner1, banner2 } from '@/assets/event_solutions/banners';
 import { wallpaper1, wallpaper2, wallpaper3 } from '@/assets/event_solutions/wallpaper';
-
+import { vinylSticker1, vinylSticker2, vinylSticker3 } from '@/assets/event_solutions/vinyl_stickers';
 
 // Bags
 import { backpacks1, backpacks2, backpacks3, backpacks4, backpacks5 } from '../assets/bags/backpacks';
@@ -22,7 +22,8 @@ import { toteBags1, toteBags2, toteBags3, toteBags4 } from '../assets/bags/tote_
 // Corporate Gifts
 import { bottles1, bottles2, bottles3, bottles4, bottles5, bottles6 } from '../assets/corporate_gifts/bottles';
 import { coasters1, coasters2 } from '../assets/corporate_gifts/coasters';
-import { mugs1, mugs2, mugs3, mugs4, mugs5, mugs6, mugs7, mugs8, mugs9, mugs10 } from '../assets/corporate_gifts/mugs';
+import { mugs1, mugs2, mugs3, mugs4, mugs6, mugs7, mugs8, mugs9, mugs10 } from '../assets/corporate_gifts/mugs';
+import { TravelMug1 } from '@/assets/corporate_gifts/travel_mugs';
 
 // Clothing Apparels
 import { aprons1 } from '../assets/clothing_apparels/aprons';
@@ -828,7 +829,7 @@ export const products: Product[] = [
     description:
       'Premium ceramic mugs with custom printing. Perfect for corporate gifts, employee welcome kits, and promotional giveaways. Microwave and dishwasher safe.',
     image: mugs1,
-    gallery: [mugs2, mugs3, mugs4, mugs5, mugs6, mugs7, mugs8, mugs9, mugs10],
+    gallery: [mugs2, mugs3, mugs4, mugs6, mugs7, mugs8, mugs9, mugs10],
     relatedProductIds: ['corporate-002', 'corporate-003', 'corporate-005'],
     featured: true,
     bestseller: true,
@@ -876,8 +877,8 @@ export const products: Product[] = [
     shortDescription: 'Insulated travel mugs with custom printing.',
     description:
       'Premium insulated travel mugs with your design. Keep beverages hot or cold while showcasing your brand. Perfect for corporate gifts and premium giveaways.',
-    image: 'https://placehold.co/600x400/0891b2/ffffff?text=Travel+Mugs',
-    gallery: ['https://placehold.co/800x600/0891b2/ffffff?text=Travel+Mugs+1'],
+    image: TravelMug1,
+    gallery: [],
     relatedProductIds: ['corporate-001', 'corporate-002'],
     newArrival: true,
     badge: 'new',
@@ -1124,8 +1125,8 @@ export const products: Product[] = [
     shortDescription: 'Custom vinyl stickers for vehicles, windows, and walls.',
     description:
       'Durable vinyl stickers for vehicles, shop windows, walls, and outdoor signage. Weather-resistant with vibrant colors that last.',
-    image: 'https://placehold.co/600x400/dc2626/ffffff?text=Vinyl+Stickers',
-    gallery: ['https://placehold.co/800x600/dc2626/ffffff?text=Vinyl+1'],
+    image: vinylSticker1,
+    gallery: [vinylSticker2, vinylSticker3],
     relatedProductIds: ['event-006', 'stationery-009'],
     bestseller: true,
     badge: 'bestseller',
