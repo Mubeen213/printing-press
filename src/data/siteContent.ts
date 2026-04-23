@@ -1,4 +1,5 @@
 import type { AudienceSolution } from '@/types';
+import { BannerEvents, BannerHoodies, BannerSwag } from '@/assets/hero';
 
 /* ===================================================
    HOMEPAGE CONTENT
@@ -11,9 +12,6 @@ export const announcementMessages = [
 ];
 
 export const heroContent = {
-  headline: 'Custom Printing & Branding for Hyderabad',
-  subheadline:
-    'Business cards, wedding invites, T-shirts, corporate gifts, banners — all made locally with care. From startups to weddings, we print it all.',
   primaryCTA: 'Get Quote on WhatsApp',
   secondaryCTA: 'Browse Categories',
   trustChips: [
@@ -23,6 +21,27 @@ export const heroContent = {
     { label: 'Wedding & Event Ready', icon: 'PartyPopper' },
   ],
 };
+
+export const heroSlides = [
+  {
+    id: 1,
+    image: BannerHoodies,
+    headline: 'Customized to Showcase Your Branding & Designs!',
+    subheadline: 'Premium hoodies, t-shirts, and uniforms made locally in Hyderabad.',
+  },
+  {
+    id: 2,
+    image: BannerSwag,
+    headline: "Got a Brand? We've Got Your Merch Covered!",
+    subheadline: 'Complete corporate kits, welcome boxes, and branded office supplies.',
+  },
+  {
+    id: 3,
+    image: BannerEvents,
+    headline: 'Branded Swag: Your Team, Your Ambassadors',
+    subheadline: 'High-impact banners, standees, and signage for events and exhibitions.',
+  },
+];
 
 export const whyChooseUs = [
   {

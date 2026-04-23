@@ -230,7 +230,7 @@ img {
 
 @keyframes marquee {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  to { transform: translateX(-100%); }
 }
 
 .animate-fade-up {
@@ -259,6 +259,18 @@ img {
 
 .animate-marquee {
   animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-slow {
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee-fast {
+  animation: marquee 15s linear infinite;
+}
+
+.animate-direction-reverse {
+  animation-direction: reverse;
 }
 
 /* Scroll reveal — section level */

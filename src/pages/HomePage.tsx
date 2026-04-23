@@ -24,7 +24,6 @@ import { testimonials } from '@/data/testimonials';
 import { blogPosts } from '@/data/blogs';
 import { getGlobalFAQs } from '@/data/faqs';
 import {
-  heroContent,
   whyChooseUs,
   audienceSolutions,
   instagramFeed,
@@ -36,6 +35,8 @@ import { useSEO } from '@/utils/seo';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { ScrollRevealCard } from '@/components/ScrollRevealCard';
 import { ProcessSection } from '@/components/home/ProcessSection';
+import { HeroCarousel } from '@/components/home/HeroCarousel';
+import { InfiniteMarquee } from '@/components/ui/InfiniteMarquee';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   MapPin, Package, Rocket, PartyPopper, Palette, MessageCircle, Sliders, Zap,
@@ -56,50 +57,7 @@ export function HomePage() {
   return (
     <div ref={containerRef}>
       {/* =============== HERO =============== */}
-      <section className="relative bg-gradient-to-br from-primary-light via-white to-accent-light py-16 md:py-24 overflow-hidden">
-        <Container>
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-text leading-tight mb-6">
-              {heroContent.headline}
-            </h1>
-            <p className="text-base md:text-lg text-text-secondary leading-relaxed mb-8 max-w-2xl mx-auto">
-              {heroContent.subheadline}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-10">
-              <Button
-                variant="whatsapp"
-                size="lg"
-                href={buildDefaultWhatsAppUrl()}
-                external
-                icon={<MessageCircle className="w-5 h-5" />}
-              >
-                {heroContent.primaryCTA}
-              </Button>
-              <Button variant="outline" size="lg" to="/category/stationery">
-                {heroContent.secondaryCTA}
-              </Button>
-            </div>
-            {/* Trust Chips */}
-            <div className="flex flex-wrap justify-center gap-3">
-              {heroContent.trustChips.map((chip) => {
-                const Icon = iconMap[chip.icon] || Package;
-                return (
-                  <div
-                    key={chip.label}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/80 backdrop-blur rounded-full text-xs sm:text-sm font-medium text-text-secondary border border-border-light shadow-xs"
-                  >
-                    <Icon className="w-3.5 h-3.5 text-primary" />
-                    {chip.label}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </Container>
-        {/* Decorative gradient orbs */}
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
-      </section>
+      <HeroCarousel />
 
       {/* =============== CATEGORIES =============== */}
       {/* <SectionWrapper className="reveal">
@@ -119,7 +77,7 @@ export function HomePage() {
 
       {/* =============== PRODUCT CATEGORY CAROUSELS =============== */}
       <div className="bg-surface-alt py-12 md:py-24 space-y-16">
-        {showcaseCategories.map(({ key, title }) => {
+        {showcaseCategories.map(({ key, title }, index) => {
           const catProducts = getProductsByCategory(key).slice(0, 6);
           if (catProducts.length === 0) return null;
 
@@ -139,17 +97,20 @@ export function HomePage() {
                     </Button>
                   }
                 />
-                <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide">
-                  {catProducts.map((product, index) => (
-                    <ScrollRevealCard
+                <InfiniteMarquee
+                  speed={index % 2 === 0 ? 40 : 50}
+                  direction={index % 2 === 0 ? 'left' : 'right'}
+                  className="py-4"
+                >
+                  {catProducts.map((product) => (
+                    <div
                       key={product.id}
-                      delay={index * 80}
-                      className="w-[85vw] sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1rem)] shrink-0 snap-center"
+                      className="w-[280px] sm:w-[320px] shrink-0"
                     >
                       <ProductCard product={product} />
-                    </ScrollRevealCard>
+                    </div>
                   ))}
-                </div>
+                </InfiniteMarquee>
               </Container>
             </div>
           );
@@ -253,7 +214,7 @@ export function HomePage() {
       </SectionWrapper>
 
       {/* =============== INSTAGRAM GALLERY =============== */}
-      <SectionWrapper className="reveal">
+      {/* <SectionWrapper className="reveal">
         <SectionHeader
           title="Inspiration Gallery"
           subtitle="A glimpse of what we create for our clients across Hyderabad."
@@ -274,7 +235,7 @@ export function HomePage() {
             </ScrollRevealCard>
           ))}
         </div>
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       {/* =============== TESTIMONIALS =============== */}
       <SectionWrapper bgColor="alt" className="reveal">

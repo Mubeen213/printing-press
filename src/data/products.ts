@@ -2,7 +2,8 @@
 // stationery
 import { BusinessCard1, BusinessCard2, BusinessCard3, BusinessCard4 } from '@/assets/stationery/business_cards';
 import { Flyer1, Flyer2, Flyer3, Flyer4 } from '@/assets/stationery/flyers';
-
+import { Brochure1, Brochure2, Brochure3, Brochure4 } from '@/assets/stationery/brochures';
+import { Letterhead1, Letterhead2 } from '@/assets/stationery/letterhead';
 
 import { onesie1,  onesie3,  onesie5 } from '../assets/kids_apparels/baby_onesis';
 
@@ -116,10 +117,11 @@ export const products: Product[] = [
     shortDescription: 'Professional brochures for businesses and organizations.',
     description:
       'Showcase your products, services, or organization with professionally printed brochures. Available in bi-fold and tri-fold formats with glossy and matte finishes.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Brochures',
+    image: Brochure1,
     gallery: [
-      'https://placehold.co/800x600/f97316/ffffff?text=Brochures+1',
-      'https://placehold.co/800x600/ea580c/ffffff?text=Brochures+2',
+      Brochure2,
+      Brochure3,
+      Brochure4,
     ],
     relatedProductIds: ['stationery-002', 'stationery-012'],
     price: 799,
@@ -139,8 +141,10 @@ export const products: Product[] = [
     shortDescription: 'Custom letterheads for official business communication.',
     description:
       'Add professionalism to your correspondence with custom-printed letterheads. High-quality paper with your branding, perfect for Hyderabad businesses and organizations.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Letterheads',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Letterheads+1'],
+    image: Letterhead1,
+    gallery: [
+      Letterhead2,
+    ],
     relatedProductIds: ['stationery-001', 'stationery-003'],
     price: 599,
     minQty: 1,
@@ -413,64 +417,6 @@ export const products: Product[] = [
     tags: ['wedding', 'announcement'],
     whatsappMeta: { leadType: 'wedding' },
   },
-  {
-    id: 'wedding-004',
-    slug: 'wedding-announcement',
-    categoryKey: 'wedding-parties',
-    title: 'Wedding Announcement',
-    subtitle: 'Share your joy with everyone',
-    shortDescription: 'Custom wedding announcement cards for sharing the good news.',
-    description:
-      'Share the news of your wedding with beautifully designed announcement cards. Perfect for social media sharing and physical distribution.',
-    image: 'https://placehold.co/600x400/be185d/ffffff?text=Wedding+Announcement',
-    gallery: ['https://placehold.co/800x600/be185d/ffffff?text=Announcement+1'],
-    relatedProductIds: ['wedding-001', 'wedding-003'],
-    price: 499,
-    minQty: 1,
-    maxQty: 2000,
-    defaultQty: 100,
-    tags: ['wedding', 'announcement'],
-    whatsappMeta: { leadType: 'wedding' },
-  },
-  {
-    id: 'wedding-005',
-    slug: 'anniversary-cards',
-    categoryKey: 'wedding-parties',
-    title: 'Anniversary Cards',
-    subtitle: 'Celebrate milestones together',
-    shortDescription: 'Beautiful anniversary cards for celebrating milestones.',
-    description:
-      'Commemorate your special anniversary with custom-printed cards. Elegant designs for silver, golden, and milestone anniversaries.',
-    image: 'https://placehold.co/600x400/be185d/ffffff?text=Anniversary+Cards',
-    gallery: ['https://placehold.co/800x600/be185d/ffffff?text=Anniversary+1'],
-    relatedProductIds: ['wedding-001', 'wedding-006'],
-    price: 399,
-    minQty: 1,
-    maxQty: 2000,
-    defaultQty: 50,
-    tags: ['celebration', 'personal'],
-    whatsappMeta: { leadType: 'wedding' },
-  },
-  {
-    id: 'wedding-006',
-    slug: 'blessing-cards',
-    categoryKey: 'wedding-parties',
-    title: 'Blessing Cards',
-    subtitle: 'Share warm wishes',
-    shortDescription: 'Custom blessing and greeting cards for religious and festive occasions.',
-    description:
-      'Express your blessings and warm wishes with custom-printed cards. Perfect for religious ceremonies, festivals, and special occasions.',
-    image: 'https://placehold.co/600x400/be185d/ffffff?text=Blessing+Cards',
-    gallery: ['https://placehold.co/800x600/be185d/ffffff?text=Blessing+1'],
-    relatedProductIds: ['wedding-005', 'stationery-005'],
-    price: 299,
-    minQty: 1,
-    maxQty: 2000,
-    defaultQty: 50,
-    tags: ['religious', 'festive', 'personal'],
-    whatsappMeta: { leadType: 'general' },
-  },
-
   /* ===================================================
      C) CLOTHING & APPARELS
      =================================================== */
