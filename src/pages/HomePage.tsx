@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   MessageCircle,
@@ -19,7 +20,7 @@ import { ProductCard } from '@/components/ProductCard';
 // import { CategoryCard } from '@/components/CategoryCard';
 import { TestimonialCard } from '@/components/TestimonialCard';
 import { BlogCard } from '@/components/BlogCard';
-// import { categories } from '@/data/categories';
+import { categories } from '@/data/categories';
 import { testimonials } from '@/data/testimonials';
 import { blogPosts } from '@/data/blogs';
 import { getGlobalFAQs } from '@/data/faqs';
@@ -43,15 +44,11 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export function HomePage() {
   useSEO();
-  const containerRef = useScrollReveal<HTMLDivElement>();
+  const [showAllCategories, setShowAllCategories] = useState(false);
+  const containerRef = useScrollReveal<HTMLDivElement>([showAllCategories]);
   const topFAQs = getGlobalFAQs().slice(0, 5);
 
-  const showcaseCategories = [
-    { key: 'stationery', title: 'Stationery & Printing' },
-    { key: 'wedding-parties', title: 'Wedding & Parties' },
-    { key: 'clothing-apparels', title: 'Custom Apparels' },
-    { key: 'corporate-gifts', title: 'Corporate Gifting' },
-  ] as const;
+  const displayedCategories = showAllCategories ? categories : categories.slice(0, 4);
 
   return (
     <div ref={containerRef}>
@@ -76,7 +73,8 @@ export function HomePage() {
 
       {/* =============== PRODUCT CATEGORY CAROUSELS =============== */}
       <div className="bg-surface-alt py-12 md:py-24 space-y-16">
-        {showcaseCategories.map(({ key, title }, index) => {
+        {displayedCategories.map((category, index) => {
+          const { key, name: title } = category;
           const catProducts = getProductsByCategory(key).slice(0, 6);
           if (catProducts.length === 0) return null;
 
@@ -114,6 +112,18 @@ export function HomePage() {
             </div>
           );
         })}
+
+        {!showAllCategories && (
+          <div className="flex justify-center pt-8">
+            <Button 
+              size="lg" 
+              onClick={() => setShowAllCategories(true)}
+              className="px-8 shadow-md"
+            >
+              See More Categories
+            </Button>
+          </div>
+        )}
       </div>
 
       {/* =============== OUR PROCESS =============== */}

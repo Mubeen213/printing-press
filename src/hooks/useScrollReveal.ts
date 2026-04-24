@@ -6,7 +6,7 @@ import { useEffect, useRef } from 'react';
  * Respects prefers-reduced-motion.
  * Returns a ref to attach to the page container element.
  */
-export function useScrollReveal<T extends HTMLElement = HTMLDivElement>() {
+export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(dependencies: React.DependencyList = []) {
   const ref = useRef<T>(null);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>() {
     container.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, []);
+  }, dependencies);
 
   return ref;
 }
