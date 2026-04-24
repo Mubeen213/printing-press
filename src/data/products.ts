@@ -39,11 +39,20 @@ import { bottles1, bottles2, bottles3, bottles4, bottles5, bottles6 } from '../a
 import { coasters1, coasters2 } from '../assets/corporate_gifts/coasters';
 import { mugs1, mugs2, mugs3, mugs4, mugs6, mugs7, mugs8, mugs9, mugs10 } from '../assets/corporate_gifts/mugs';
 import { TravelMug1 } from '@/assets/corporate_gifts/travel_mugs';
+import { giftSets1, giftSets2, giftSets3 } from '../assets/corporate_gifts/gift_sets';
+
+// Wedding & Parties
+import { saveTheDate1, saveTheDate2, saveTheDate3, saveTheDate4, saveTheDate5 } from '../assets/wedding_parties/save_the_date';
+import { acrylicInvites1, acrylicInvites2, acrylicInvites3, acrylicInvites4 } from '../assets/wedding_parties/acrylic_invites';
+
+// Office Stationery
+import { welcomeKit1, welcomeKit2, welcomeKit3, welcomeKit4 } from '../assets/office_stationery/welcome_kit';
+import { coasters1 as officeCoasters1, coasters2 as officeCoasters2 } from '../assets/office_stationery/coasters';
 
 // Clothing Apparels
 import { aprons1 } from '../assets/clothing_apparels/aprons';
 import { hoodies1, hoodies2, hoodies3 } from '../assets/clothing_apparels/hoodies';
-import { poloShirts1 } from '../assets/clothing_apparels/polo_shirts';
+import { poloShirts1, poloShirts2, poloShirts3, poloShirts4 } from '../assets/clothing_apparels/polo_shirts';
 import { safetyJackets1 } from '../assets/clothing_apparels/safety_jackets';
 import { sweatShirts1 } from '../assets/clothing_apparels/sweat_shirts';
 import { tShirts1, tShirts2, tShirts3, tShirts4, tShirts5, tShirts6, tShirts7, tShirts8, tShirts9, tShirts10 } from '../assets/clothing_apparels/t_shirts';
@@ -366,10 +375,11 @@ export const products: Product[] = [
     shortDescription: 'Premium acrylic wedding invitations for a luxurious touch.',
     description:
       'Elevate your wedding with stunning acrylic invitations. Crystal-clear, frosted, or tinted options with elegant printing. The ultimate luxury invitation for Hyderabad weddings.',
-    image: 'https://placehold.co/600x400/be185d/ffffff?text=Acrylic+Invites',
+    image: acrylicInvites1,
     gallery: [
-      'https://placehold.co/800x600/be185d/ffffff?text=Acrylic+1',
-      'https://placehold.co/800x600/9d174d/ffffff?text=Acrylic+2',
+      acrylicInvites2,
+      acrylicInvites3,
+      acrylicInvites4,
     ],
     relatedProductIds: ['wedding-001', 'wedding-003'],
     featured: true,
@@ -396,8 +406,8 @@ export const products: Product[] = [
     shortDescription: 'Elegant save-the-date cards to announce your big day.',
     description:
       'Give your guests advance notice with beautiful save-the-date cards. Available in multiple styles — modern, rustic, elegant, and traditional.',
-    image: 'https://placehold.co/600x400/be185d/ffffff?text=Save+the+Date',
-    gallery: ['https://placehold.co/800x600/be185d/ffffff?text=Save+the+Date+1'],
+    image: saveTheDate1,
+    gallery: [saveTheDate2, saveTheDate3, saveTheDate4, saveTheDate5],
     relatedProductIds: ['wedding-001', 'wedding-004'],
     price: 599,
     minQty: 1,
@@ -449,7 +459,7 @@ export const products: Product[] = [
     description:
       'Professional polo shirts with embroidered or printed logos. Ideal for corporate uniforms, hotel staff, and team branding in Hyderabad.',
     image: poloShirts1,
-    gallery: [poloShirts1],
+    gallery: [poloShirts2, poloShirts3, poloShirts4],
     relatedProductIds: ['clothing-001', 'clothing-003'],
     featured: true,
     badge: 'bulk',
@@ -840,8 +850,8 @@ export const products: Product[] = [
     shortDescription: 'Custom curated gift sets for clients and employees.',
     description:
       'Impress with curated gift sets combining multiple branded items. Perfect for client appreciation, employee milestones, and festive gifting in Hyderabad.',
-    image: 'https://placehold.co/600x400/0891b2/ffffff?text=Gift+Sets',
-    gallery: ['https://placehold.co/800x600/0891b2/ffffff?text=Gift+Sets+1'],
+    image: giftSets1,
+    gallery: [giftSets2, giftSets3],
     relatedProductIds: ['corporate-001', 'corporate-002', 'corporate-005'],
     featured: true,
     badge: 'first-order',
@@ -948,8 +958,8 @@ export const products: Product[] = [
     shortDescription: 'Custom coasters for office desks and meeting rooms.',
     description:
       'Branded coasters for office desks and meeting rooms. Keep your workplace tidy while showcasing your brand identity.',
-    image: 'https://placehold.co/600x400/64748b/ffffff?text=Coaster',
-    gallery: ['https://placehold.co/800x600/64748b/ffffff?text=Coaster+1'],
+    image: officeCoasters1,
+    gallery: [officeCoasters2],
     relatedProductIds: ['corporate-005', 'office-003'],
     price: 129,
     minQty: 1,
@@ -967,8 +977,8 @@ export const products: Product[] = [
     shortDescription: 'Custom onboarding kits for new employees.',
     description:
       'Make a great first impression with custom employee welcome kits. Combine notebooks, pens, mugs, T-shirts, and more in a branded package. Perfect for Hyderabad tech companies.',
-    image: 'https://placehold.co/600x400/64748b/ffffff?text=Welcome+Kit',
-    gallery: ['https://placehold.co/800x600/64748b/ffffff?text=Welcome+Kit+1'],
+    image: welcomeKit1,
+    gallery: [welcomeKit2, welcomeKit3, welcomeKit4],
     relatedProductIds: ['office-001', 'office-002', 'corporate-001'],
     featured: true,
     badge: 'first-order',
