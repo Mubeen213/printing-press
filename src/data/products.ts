@@ -3,7 +3,15 @@
 import { BusinessCard1, BusinessCard2, BusinessCard3, BusinessCard4 } from '@/assets/stationery/business_cards';
 import { Flyer1, Flyer2, Flyer3, Flyer4 } from '@/assets/stationery/flyers';
 import { Brochure1, Brochure2, Brochure3, Brochure4 } from '@/assets/stationery/brochures';
-import { Letterhead1, Letterhead2 } from '@/assets/stationery/letterhead';
+import { Letterhead1, Letterhead2, Letterhead3, LetterheadBc4 } from '@/assets/stationery/letterhead';
+import { Certificates1, Certificates2, Certificates3, Certificates4 } from '@/assets/stationery/certificates';
+import { PresentationFolders2, PresentationFolders3, PresentationFolders4 } from '@/assets/stationery/folders';
+import { PackagingLabel3, PackagingLabel5, RoundLabel1, RoundLabel2, RoundLabel4 } from '@/assets/stationery/label_stickers';
+import { NameTag2, NameTag3, NameTag4, NameTag5 } from '@/assets/stationery/name_tags';
+import { PhotoCalender1, PhotoCalender2, PhotoCalender3, PhotoCalender4, PhotoCalender5 } from '@/assets/stationery/calendars';
+import { DeskPlanner1, DeskPlanner2, DeskPlanner3, DeskPlanner4 } from '@/assets/stationery/desk_calenders';
+import { Notepad1, Notepad2, Notepad3 } from '@/assets/stationery/notepads';
+import { ThankUCard1, ThankUCard2, ThankUCard3, ThankUCard4, ThankUCard5 } from '@/assets/stationery/thank_u_cards';
 
 import { onesie1,  onesie3,  onesie5 } from '../assets/kids_apparels/baby_onesis';
 
@@ -144,6 +152,8 @@ export const products: Product[] = [
     image: Letterhead1,
     gallery: [
       Letterhead2,
+      Letterhead3,
+      LetterheadBc4,
     ],
     relatedProductIds: ['stationery-001', 'stationery-003'],
     price: 599,
@@ -163,8 +173,8 @@ export const products: Product[] = [
     shortDescription: 'Beautiful thank you cards for personal and business use.',
     description:
       'Show appreciation with custom thank you cards. Perfect for businesses, weddings, and personal occasions. Premium paper with elegant designs.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Thank+You+Cards',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Thank+You+Cards+1'],
+    image: ThankUCard1,
+    gallery: [ThankUCard2, ThankUCard3, ThankUCard4, ThankUCard5],
     relatedProductIds: ['stationery-001', 'wedding-001'],
     newArrival: true,
     badge: 'new',
@@ -184,8 +194,8 @@ export const products: Product[] = [
     shortDescription: 'Custom name tags for events, offices, and organizations.',
     description:
       'Professional name tags and badges for conferences, offices, and corporate events. Durable materials with sharp print quality.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Name+Tags',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Name+Tags+1'],
+    image: NameTag2,
+    gallery: [NameTag3, NameTag4, NameTag5],
     relatedProductIds: ['stationery-001', 'stationery-004'],
     price: 199,
     minQty: 1,
@@ -203,8 +213,8 @@ export const products: Product[] = [
     shortDescription: 'Custom notepads with your logo and branding.',
     description:
       'Keep your brand visible with custom notepads. Perfect for offices, meetings, and promotional giveaways. Multiple sizes available.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Notepads',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Notepads+1'],
+    image: Notepad1,
+    gallery: [Notepad2, Notepad3],
     relatedProductIds: ['office-002', 'stationery-001'],
     price: 249,
     minQty: 1,
@@ -212,27 +222,6 @@ export const products: Product[] = [
     defaultQty: 100,
     tags: ['corporate', 'promotional'],
     whatsappMeta: { leadType: 'corporate' },
-  },
-  {
-    id: 'stationery-008',
-    slug: 'photo-book',
-    categoryKey: 'stationery',
-    title: 'Photo Book',
-    subtitle: 'Preserve memories beautifully',
-    shortDescription: 'Custom photo books for weddings, events, and portfolios.',
-    description:
-      'Create stunning photo books to preserve your precious memories. Perfect for weddings, travel, portfolios, and family albums. Premium paper with vibrant printing.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Photo+Book',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Photo+Book+1'],
-    relatedProductIds: ['wedding-001', 'stationery-005'],
-    newArrival: true,
-    badge: 'new',
-    price: 1499,
-    minQty: 1,
-    maxQty: 2000,
-    defaultQty: 1,
-    tags: ['personal', 'wedding', 'portfolio'],
-    whatsappMeta: { leadType: 'wedding' },
   },
   {
     id: 'stationery-009',
@@ -243,8 +232,8 @@ export const products: Product[] = [
     shortDescription: 'Custom printed stickers and labels for products and packaging.',
     description:
       'Professional label stickers for product packaging, branding, and organization. Available in various shapes, sizes, and finishes. Water-resistant options available.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Label+Stickers',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Label+Stickers+1'],
+    image: PackagingLabel3,
+    gallery: [PackagingLabel5, RoundLabel1, RoundLabel2, RoundLabel4],
     relatedProductIds: ['stationery-002', 'event-005'],
     bestseller: true,
     badge: 'bestseller',
@@ -264,8 +253,8 @@ export const products: Product[] = [
     shortDescription: 'Custom printed calendars for desks and walls.',
     description:
       'Keep your brand visible year-round with custom calendars. Wall calendars, desk calendars, and pocket calendars with your branding and imagery.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Calendars',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Calendars+1'],
+    image: PhotoCalender1,
+    gallery: [PhotoCalender2, PhotoCalender3, PhotoCalender4, PhotoCalender5],
     relatedProductIds: ['stationery-007', 'office-002'],
     price: 399,
     minQty: 1,
@@ -283,8 +272,8 @@ export const products: Product[] = [
     shortDescription: 'Custom certificates for schools, organizations, and events.',
     description:
       'Professional certificates for academic achievements, employee recognition, and event participation. Premium paper with elegant designs.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Certificates',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Certificates+1'],
+    image: Certificates1,
+    gallery: [Certificates2, Certificates3, Certificates4],
     relatedProductIds: ['stationery-004', 'stationery-012'],
     price: 149,
     minQty: 1,
@@ -302,8 +291,8 @@ export const products: Product[] = [
     shortDescription: 'Custom desk planners with your brand.',
     description:
       'Keep teams organized with branded desk planners. Perfect for corporate offices and promotional gifts.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Desk+Planner',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Desk+Planner+1'],
+    image: DeskPlanner1,
+    gallery: [DeskPlanner2, DeskPlanner3, DeskPlanner4],
     relatedProductIds: ['stationery-010', 'office-002'],
     price: 499,
     minQty: 1,
@@ -321,8 +310,8 @@ export const products: Product[] = [
     shortDescription: 'Custom presentation folders for meetings and proposals.',
     description:
       'Make your presentations stand out with custom branded folders. Perfect for business meetings, proposals, and corporate events in Hyderabad.',
-    image: 'https://placehold.co/600x400/f97316/ffffff?text=Presentation+Folders',
-    gallery: ['https://placehold.co/800x600/f97316/ffffff?text=Folders+1'],
+    image: PresentationFolders2,
+    gallery: [PresentationFolders3, PresentationFolders4],
     relatedProductIds: ['stationery-003', 'stationery-004'],
     price: 699,
     minQty: 1,
