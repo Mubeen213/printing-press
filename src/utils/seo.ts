@@ -50,7 +50,7 @@ export function useSEO({ title, description, ogImage, noindex }: SEOProps = {}) 
     if (noindex) {
       setMetaTag('robots', 'noindex, nofollow');
     } else {
-      removeMetaTag('robots');
+      removeMetaTag();
     }
 
     // JSON-LD Organization Schema
@@ -84,7 +84,7 @@ function setMetaTag(name: string, content: string, attr: 'name' | 'property' = '
   el.setAttribute('content', content);
 }
 
-function removeMetaTag(name: string) {
+function removeMetaTag() {
   const el = document.querySelector(`meta[name="robots"]`);
   if (el) el.remove();
 }
