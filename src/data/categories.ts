@@ -11,7 +11,7 @@ export const categories: Category[] = [
     shortDescription: 'Business cards, flyers, brochures & more',
     image: 'https://placehold.co/800x500/f97316/ffffff',
     icon: 'FileText',
-    seoTitle: 'Custom Stationery Printing in Hyderabad | PrintingFreaks',
+    seoTitle: 'Custom Stationery Printing in Hyderabad | Printaze',
     seoDescription:
       'Order custom business cards, flyers, brochures, letterheads, and more in Hyderabad. Premium printing with fast delivery.',
   },
@@ -25,7 +25,7 @@ export const categories: Category[] = [
     shortDescription: 'Wedding invites, save-the-dates & celebration cards',
     image: 'https://placehold.co/800x500/be185d/ffffff',
     icon: 'Heart',
-    seoTitle: 'Wedding Invitation Printing in Hyderabad | PrintingFreaks',
+    seoTitle: 'Wedding Invitation Printing in Hyderabad | Printaze',
     seoDescription:
       'Beautiful wedding invitations, acrylic invites, and party cards printed in Hyderabad. Custom designs for your celebration.',
   },
@@ -39,7 +39,7 @@ export const categories: Category[] = [
     shortDescription: 'T-shirts, polos, hoodies & uniforms',
     image: 'https://placehold.co/800x500/2563eb/ffffff',
     icon: 'Shirt',
-    seoTitle: 'Custom T-Shirt & Apparel Printing in Hyderabad | PrintingFreaks',
+    seoTitle: 'Custom T-Shirt & Apparel Printing in Hyderabad | Printaze',
     seoDescription:
       'Get custom T-shirts, polo shirts, hoodies, and uniforms printed in Hyderabad. Perfect for teams, events, and promotions.',
   },
@@ -53,7 +53,7 @@ export const categories: Category[] = [
     shortDescription: 'Kids polo shirts, t-shirts & baby onesies',
     image: 'https://placehold.co/800x500/8b5cf6/ffffff',
     icon: 'Baby',
-    seoTitle: 'Custom Kids Apparel Printing in Hyderabad | PrintingFreaks',
+    seoTitle: 'Custom Kids Apparel Printing in Hyderabad | Printaze',
     seoDescription:
       'Custom printed kids clothing in Hyderabad. Polo shirts, T-shirts, and baby onesies with your designs.',
   },
@@ -67,7 +67,7 @@ export const categories: Category[] = [
     shortDescription: 'Tote bags, jute bags, cotton bags & backpacks',
     image: 'https://placehold.co/800x500/059669/ffffff',
     icon: 'ShoppingBag',
-    seoTitle: 'Custom Bag Printing in Hyderabad | PrintingFreaks',
+    seoTitle: 'Custom Bag Printing in Hyderabad | Printaze',
     seoDescription:
       'Custom printed tote bags, jute bags, and promotional bags in Hyderabad. Eco-friendly options for businesses and events.',
   },
@@ -81,7 +81,7 @@ export const categories: Category[] = [
     shortDescription: 'Mugs, bottles, gift sets & coasters',
     image: 'https://placehold.co/800x500/0891b2/ffffff',
     icon: 'Gift',
-    seoTitle: 'Corporate Gift Printing in Hyderabad | PrintingFreaks',
+    seoTitle: 'Corporate Gift Printing in Hyderabad | Printaze',
     seoDescription:
       'Custom corporate gifts in Hyderabad. Branded mugs, water bottles, gift sets, and coasters for clients and employees.',
   },
@@ -95,7 +95,7 @@ export const categories: Category[] = [
     shortDescription: 'Pens, notebooks, diaries & welcome kits',
     image: 'https://placehold.co/800x500/64748b/ffffff',
     icon: 'Briefcase',
-    seoTitle: 'Custom Office Stationery in Hyderabad | PrintingFreaks',
+    seoTitle: 'Custom Office Stationery in Hyderabad | Printaze',
     seoDescription:
       'Branded office stationery in Hyderabad. Custom pens, notebooks, diaries, and employee welcome kits.',
   },
@@ -109,7 +109,7 @@ export const categories: Category[] = [
     shortDescription: 'Banners, standees, flags & vinyl stickers',
     image: 'https://placehold.co/800x500/dc2626/ffffff',
     icon: 'Flag',
-    seoTitle: 'Event Branding & Signage in Hyderabad | PrintingFreaks',
+    seoTitle: 'Event Branding & Signage in Hyderabad | Printaze',
     seoDescription:
       'Professional event signage in Hyderabad. Roll-up banners, standees, flags, and vinyl stickers for exhibitions and promotions.',
   },

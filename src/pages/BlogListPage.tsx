@@ -8,13 +8,13 @@ import { useSEO } from '@/utils/seo';
 export function BlogListPage() {
   useSEO({
     title: 'Blog',
-    description: 'Tips, trends, and guides for printing, branding, and events in Hyderabad. Read the PrintingFreaks blog.',
+    description: 'Tips, trends, and guides for printing, branding, and events in Hyderabad. Read the Printaze blog.',
   });
 
   return (
     <div>
       <PageHero
-        title="PrintingFreaks Blog"
+        title="Printaze Blog"
         subtitle="Tips, trends, and guides for printing, branding, and events in Hyderabad."
         bgColor="gradient"
         compact

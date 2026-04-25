@@ -7,7 +7,7 @@
 
 export const themeConfig = {
   name: 'default',
-  label: 'PrintingFreaks Default',
+  label: 'Printaze Default',
   colors: {
     primary: 'var(--color-primary)',
     primaryHover: 'var(--color-primary-hover)',

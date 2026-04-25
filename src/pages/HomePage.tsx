@@ -200,7 +200,7 @@ export function HomePage() {
       {/* =============== WHY CHOOSE US =============== */}
       <SectionWrapper bgColor="alt" className="reveal">
         <SectionHeader
-          title="Why Choose PrintingFreaks?"
+          title="Why Choose Printaze?"
           subtitle="Here's what makes us Hyderabad's go-to printing partner."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

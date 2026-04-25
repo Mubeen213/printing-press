@@ -30,17 +30,17 @@ Combine your business card with a QR code that links to your portfolio, menu, or
 
 ## Getting Started
 
-At PrintingFreaks, we help Hyderabad startups create business cards that truly represent their brand. From design consultation to premium printing, we handle everything.
+At Printaze, we help Hyderabad startups create business cards that truly represent their brand. From design consultation to premium printing, we handle everything.
 
 **Ready to create your perfect business card? Send us a message on WhatsApp!**
     `.trim(),
     image: 'https://placehold.co/800x450/f97316/ffffff?text=Business+Card+Ideas',
     category: 'Stationery',
-    author: 'PrintingFreaks Team',
+    author: 'Printaze Team',
     date: '2026-03-15',
     readTime: '5 min read',
     tags: ['business cards', 'startups', 'Hyderabad', 'branding'],
-    seoTitle: 'Best Business Card Printing Ideas for Hyderabad Startups | PrintingFreaks Blog',
+    seoTitle: 'Best Business Card Printing Ideas for Hyderabad Startups | Printaze Blog',
     seoDescription:
       'Discover creative business card designs and printing ideas perfect for startups in Hyderabad. Tips on finishes, design trends, and more.',
   },
@@ -74,15 +74,15 @@ Recycled paper, plantable seed paper, and minimalist designs for environmentally
 - Ask for samples before placing bulk orders
 - Include clear RSVP information
 
-**Let PrintingFreaks help you create the perfect wedding invitation. Chat with us on WhatsApp!**
+**Let Printaze help you create the perfect wedding invitation. Chat with us on WhatsApp!**
     `.trim(),
     image: 'https://placehold.co/800x450/be185d/ffffff?text=Wedding+Invite+Trends',
     category: 'Wedding',
-    author: 'PrintingFreaks Team',
+    author: 'Printaze Team',
     date: '2026-03-10',
     readTime: '6 min read',
     tags: ['wedding', 'invitations', 'Hyderabad', 'trends'],
-    seoTitle: 'Wedding Invitation Trends in Hyderabad 2026 | PrintingFreaks Blog',
+    seoTitle: 'Wedding Invitation Trends in Hyderabad 2026 | Printaze Blog',
     seoDescription:
       'Discover the latest wedding invitation trends in Hyderabad for 2026. Acrylic invites, bilingual designs, and eco-friendly options.',
   },
@@ -124,11 +124,11 @@ Ideal for winter events and tech team merch.
     `.trim(),
     image: 'https://placehold.co/800x450/2563eb/ffffff?text=Custom+T-Shirts+Guide',
     category: 'Apparel',
-    author: 'PrintingFreaks Team',
+    author: 'Printaze Team',
     date: '2026-03-05',
     readTime: '7 min read',
     tags: ['t-shirts', 'events', 'colleges', 'Hyderabad'],
-    seoTitle: 'Custom T-Shirts for Events & College Fests in Hyderabad | PrintingFreaks Blog',
+    seoTitle: 'Custom T-Shirts for Events & College Fests in Hyderabad | Printaze Blog',
     seoDescription:
       'Complete guide to ordering custom T-shirts for college fests and events in Hyderabad. Printing methods, order tips, and more.',
   },
@@ -169,11 +169,11 @@ Insulated mugs for the coffee-loving tech team.
     `.trim(),
     image: 'https://placehold.co/800x450/0891b2/ffffff?text=Corporate+Gifting',
     category: 'Corporate',
-    author: 'PrintingFreaks Team',
+    author: 'Printaze Team',
     date: '2026-02-28',
     readTime: '5 min read',
     tags: ['corporate gifts', 'tech companies', 'Hyderabad', 'IT'],
-    seoTitle: 'Corporate Gifting Ideas for Hyderabad Tech Companies | PrintingFreaks Blog',
+    seoTitle: 'Corporate Gifting Ideas for Hyderabad Tech Companies | Printaze Blog',
     seoDescription:
       'Discover curated corporate gifting ideas for tech companies in Hyderabad. Welcome kits, premium bottles, gift sets, and more.',
   },
@@ -216,11 +216,11 @@ Both roll-up banners and standees are popular for store promotions, events, and 
     `.trim(),
     image: 'https://placehold.co/800x450/dc2626/ffffff?text=Banners+vs+Standees',
     category: 'Events',
-    author: 'PrintingFreaks Team',
+    author: 'Printaze Team',
     date: '2026-02-20',
     readTime: '4 min read',
     tags: ['banners', 'standees', 'promotions', 'Hyderabad'],
-    seoTitle: 'Roll-Up Banners vs Standees for Promotions | PrintingFreaks Blog',
+    seoTitle: 'Roll-Up Banners vs Standees for Promotions | Printaze Blog',
     seoDescription:
       'Compare roll-up banners and standees for store promotions. Learn which is best for your needs in Hyderabad.',
   },
@@ -262,11 +262,11 @@ Use a branded box or bag. The unboxing experience is part of the impression.
     `.trim(),
     image: 'https://placehold.co/800x450/64748b/ffffff?text=Welcome+Kits',
     category: 'Office',
-    author: 'PrintingFreaks Team',
+    author: 'Printaze Team',
     date: '2026-02-15',
     readTime: '5 min read',
     tags: ['welcome kits', 'HR', 'onboarding', 'Hyderabad'],
-    seoTitle: 'Employee Welcome Kit Ideas for Hyderabad Companies | PrintingFreaks Blog',
+    seoTitle: 'Employee Welcome Kit Ideas for Hyderabad Companies | Printaze Blog',
     seoDescription:
       'What to include in employee welcome kits. A complete guide for Hyderabad companies looking to impress new hires.',
   },
@@ -311,13 +311,13 @@ Different marketing materials serve different purposes. Let's help you choose th
     `.trim(),
     image: 'https://placehold.co/800x450/f97316/ffffff?text=Flyers+Brochures+Folders',
     category: 'Stationery',
-    author: 'PrintingFreaks Team',
+    author: 'Printaze Team',
     date: '2026-02-10',
     readTime: '4 min read',
     tags: ['flyers', 'brochures', 'folders', 'marketing'],
-    seoTitle: 'Flyers vs Brochures vs Folders — Which Print Format to Choose | PrintingFreaks Blog',
+    seoTitle: 'Flyers vs Brochures vs Folders — Which Print Format to Choose | Printaze Blog',
     seoDescription:
-      'Guide to choosing between flyers, brochures, and presentation folders for your marketing needs. Tips from PrintingFreaks Hyderabad.',
+      'Guide to choosing between flyers, brochures, and presentation folders for your marketing needs. Tips from Printaze.',
   },
   {
     id: 'blog-008',
@@ -357,11 +357,11 @@ Natural, durable, and stylish. Perfect for organic, artisanal, and eco-conscious
     `.trim(),
     image: 'https://placehold.co/800x450/059669/ffffff?text=Custom+Bags',
     category: 'Bags',
-    author: 'PrintingFreaks Team',
+    author: 'Printaze Team',
     date: '2026-02-05',
     readTime: '4 min read',
     tags: ['bags', 'promotions', 'budget', 'Hyderabad'],
-    seoTitle: 'Budget-Friendly Custom Bags for Promotions in Hyderabad | PrintingFreaks Blog',
+    seoTitle: 'Budget-Friendly Custom Bags for Promotions in Hyderabad | Printaze Blog',
     seoDescription:
       'Affordable custom bag options for Hyderabad businesses. Non-woven, cotton, and jute bags for local promotions and events.',
   },

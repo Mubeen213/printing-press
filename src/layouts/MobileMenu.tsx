@@ -54,7 +54,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">P</span>
             </div>
-            <span className="font-bold text-lg text-text">PrintingFreaks</span>
+            <span className="font-bold text-lg text-text">Printaze</span>
           </div>
           <button
             onClick={onClose}

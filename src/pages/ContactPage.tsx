@@ -10,7 +10,7 @@ import { useSEO } from '@/utils/seo';
 export function ContactPage() {
   useSEO({
     title: 'Contact Us',
-    description: 'Get in touch with PrintingFreaks Hyderabad via WhatsApp. Quick response, no forms, no wait.',
+    description: 'Get in touch with Printaze via WhatsApp. Quick response, no forms, no wait.',
   });
 
   const [form, setForm] = useState({

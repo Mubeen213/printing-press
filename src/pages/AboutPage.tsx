@@ -14,13 +14,13 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 export function AboutPage() {
   useSEO({
     title: 'About Us',
-    description: 'Learn about PrintingFreaks Hyderabad — your local partner for custom printing, apparel, and gifting.',
+    description: 'Learn about Printaze — your local partner for custom printing, apparel, and gifting.',
   });
 
   return (
     <div>
       <PageHero
-        title="About PrintingFreaks"
+        title="About Printaze"
         subtitle="Your local partner for custom printing, apparel, and gifting in Hyderabad."
         bgColor="gradient"
       />

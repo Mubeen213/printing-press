@@ -208,6 +208,7 @@ export interface SiteConfig {
     defaultTitle: string;
     defaultDescription: string;
     titleTemplate: string;
+    url: string;
   };
   cta: {
     primaryLabel: string;
