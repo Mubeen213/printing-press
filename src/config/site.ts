@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
     defaultDescription:
       'Custom printing services in Hyderabad. Business cards, wedding invites, T-shirts, corporate gifts, banners & more. Get a quote on WhatsApp.',
     titleTemplate: '%s | Printaze',
-    url: 'https://printaze.mubeen.in',
+    url: 'https://printaze.printaze.com',
   },
   cta: {
     primaryLabel: 'Get Quote on WhatsApp',

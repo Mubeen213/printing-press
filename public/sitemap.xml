@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://printaze.mubeen.in/</loc>
+    <loc>https://printaze.printaze.com/</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://printaze.mubeen.in/about</loc>
+    <loc>https://printaze.printaze.com/about</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://printaze.mubeen.in/contact</loc>
+    <loc>https://printaze.printaze.com/contact</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://printaze.mubeen.in/get-quote</loc>
+    <loc>https://printaze.printaze.com/get-quote</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://printaze.mubeen.in/faq</loc>
+    <loc>https://printaze.printaze.com/faq</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://printaze.mubeen.in/blog</loc>
+    <loc>https://printaze.printaze.com/blog</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://printaze.mubeen.in/turnaround-info</loc>
+    <loc>https://printaze.printaze.com/turnaround-info</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://printaze.mubeen.in/file-preparation-guide</loc>
+    <loc>https://printaze.printaze.com/file-preparation-guide</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Categories -->
-  <url><loc>https://printaze.mubeen.in/category/stationery</loc><priority>0.9</priority></url>
-  <url><loc>https://printaze.mubeen.in/category/wedding-parties</loc><priority>0.9</priority></url>
-  <url><loc>https://printaze.mubeen.in/category/clothing-apparels</loc><priority>0.9</priority></url>
-  <url><loc>https://printaze.mubeen.in/category/kids-apparels</loc><priority>0.9</priority></url>
-  <url><loc>https://printaze.mubeen.in/category/bags</loc><priority>0.9</priority></url>
-  <url><loc>https://printaze.mubeen.in/category/corporate-gifts</loc><priority>0.9</priority></url>
-  <url><loc>https://printaze.mubeen.in/category/office-stationery</loc><priority>0.9</priority></url>
-  <url><loc>https://printaze.mubeen.in/category/event-solutions</loc><priority>0.9</priority></url>
+  <url><loc>https://printaze.printaze.com/category/stationery</loc><priority>0.9</priority></url>
+  <url><loc>https://printaze.printaze.com/category/wedding-parties</loc><priority>0.9</priority></url>
+  <url><loc>https://printaze.printaze.com/category/clothing-apparels</loc><priority>0.9</priority></url>
+  <url><loc>https://printaze.printaze.com/category/kids-apparels</loc><priority>0.9</priority></url>
+  <url><loc>https://printaze.printaze.com/category/bags</loc><priority>0.9</priority></url>
+  <url><loc>https://printaze.printaze.com/category/corporate-gifts</loc><priority>0.9</priority></url>
+  <url><loc>https://printaze.printaze.com/category/office-stationery</loc><priority>0.9</priority></url>
+  <url><loc>https://printaze.printaze.com/category/event-solutions</loc><priority>0.9</priority></url>
 
   <!-- Key Blog Posts -->
-  <url><loc>https://printaze.mubeen.in/blog/best-business-card-ideas-hyderabad-startups</loc><priority>0.7</priority></url>
-  <url><loc>https://printaze.mubeen.in/blog/wedding-invitation-trends-hyderabad</loc><priority>0.7</priority></url>
-  <url><loc>https://printaze.mubeen.in/blog/custom-t-shirts-events-college-fests</loc><priority>0.7</priority></url>
-  <url><loc>https://printaze.mubeen.in/blog/corporate-gifting-ideas-tech-companies-hyderabad</loc><priority>0.7</priority></url>
+  <url><loc>https://printaze.printaze.com/blog/best-business-card-ideas-hyderabad-startups</loc><priority>0.7</priority></url>
+  <url><loc>https://printaze.printaze.com/blog/wedding-invitation-trends-hyderabad</loc><priority>0.7</priority></url>
+  <url><loc>https://printaze.printaze.com/blog/custom-t-shirts-events-college-fests</loc><priority>0.7</priority></url>
+  <url><loc>https://printaze.printaze.com/blog/corporate-gifting-ideas-tech-companies-hyderabad</loc><priority>0.7</priority></url>
 </urlset>

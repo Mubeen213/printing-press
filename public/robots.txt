@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://printaze.mubeen.in/sitemap.xml
+Sitemap: https://printaze.printaze.com/sitemap.xml
