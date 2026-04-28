@@ -1,10 +1,11 @@
 import type { SiteConfig, NavItem } from '@/types';
+import { Logo512x512 } from '@/assets/white_logos';
 
 export const siteConfig: SiteConfig = {
   brand: {
     name: 'Printaze',
     tagline: 'print that amazes',
-    logo: '/logo.svg',
+    logo: Logo512x512,
     shortDescription:
       'Your one-stop destination for custom printing, apparel, corporate gifting, wedding invites, and event branding in Hyderabad.',
   },
@@ -17,7 +18,7 @@ export const siteConfig: SiteConfig = {
     defaultDescription:
       'Custom printing services in Hyderabad. Business cards, wedding invites, T-shirts, corporate gifts, banners & more. Get a quote on WhatsApp.',
     titleTemplate: '%s | Printaze',
-    url: 'https://printaze.printaze.com',
+    url: 'https://printaze.com',
   },
   cta: {
     primaryLabel: 'Get Quote on WhatsApp',

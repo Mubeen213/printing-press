@@ -4,6 +4,7 @@ import { Container } from '@/components/ui/Container';
 import { siteConfig, footerQuickLinks, footerLegalLinks } from '@/config/site';
 import { categories } from '@/data/categories';
 import { buildDefaultWhatsAppUrl } from '@/utils/whatsapp';
+import logo from '@/assets/white_logos/Logo_512x512.png';
 
 export function Footer() {
   const scrollToTop = () => {
@@ -50,9 +51,13 @@ export function Footer() {
             {/* Brand */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">P</span>
-                </div>
+               <div className="relative w-10 h-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+              <img 
+                src={logo} 
+                alt={siteConfig.brand.name} 
+                className="w-full h-full object-contain"
+              />
+            </div>
                 <span className="font-bold text-lg">{siteConfig.brand.name}</span>
               </div>
               <p className="text-sm text-white/60 leading-relaxed mb-4">

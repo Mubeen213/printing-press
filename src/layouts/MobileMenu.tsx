@@ -5,6 +5,8 @@ import { ChevronDown, MessageCircle, X } from 'lucide-react';
 import { mainNavItems } from '@/config/site';
 import { buildDefaultWhatsAppUrl } from '@/utils/whatsapp';
 
+import logo from '@/assets/logo.png';
+
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
@@ -50,9 +52,13 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         aria-label="Mobile navigation"
       >
         <div className="p-4 border-b border-border flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">P</span>
+          <div className="flex items-center gap-2.5">
+            <div className="w-9 h-9 flex items-center justify-center">
+              <img 
+                src={logo} 
+                alt="Printaze" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="font-bold text-lg text-text">Printaze</span>
           </div>
