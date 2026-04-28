@@ -1,5 +1,5 @@
-import { type ButtonHTMLAttributes, type ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import { type ButtonHTMLAttributes, type AnchorHTMLAttributes, type ReactNode } from 'react';
+import { Link, type LinkProps } from 'react-router-dom';
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'whatsapp' | 'danger';
 type ButtonSize = 'sm' | 'md' | 'lg';
@@ -14,9 +14,9 @@ interface ButtonBaseProps {
 }
 
 type ButtonProps =
-  | (ButtonBaseProps & { to: string; href?: never; external?: never; children: ReactNode } & Record<string, unknown>)
-  | (ButtonBaseProps & { href: string; to?: never; external?: boolean; children: ReactNode } & Record<string, unknown>)
-  | (ButtonBaseProps & Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'className'> & { to?: never; href?: never; external?: never });
+  | (ButtonBaseProps & Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'className'> & { to?: undefined; href?: undefined; external?: undefined })
+  | (ButtonBaseProps & Omit<LinkProps, 'className' | 'type'> & { to: string; href?: undefined; external?: undefined })
+  | (ButtonBaseProps & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'className' | 'type'> & { href: string; to?: undefined; external?: boolean });
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:

@@ -4,7 +4,7 @@ import { Container } from '@/components/ui/Container';
 import { siteConfig, footerQuickLinks, footerLegalLinks } from '@/config/site';
 import { categories } from '@/data/categories';
 import { buildDefaultWhatsAppUrl } from '@/utils/whatsapp';
-import logo from '@/assets/white_logos/Logo_512x512.png';
+import logo from '@/assets/white_logos/Logo_128x128.png';
 
 export function Footer() {
   const scrollToTop = () => {

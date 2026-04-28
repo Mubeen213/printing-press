@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
       'Your one-stop destination for custom printing, apparel, corporate gifting, wedding invites, and event branding in Hyderabad.',
   },
   whatsapp: {
-    number: '917097008749',
+    number: '916301256516',
     defaultMessage: 'Hello! I would like to know more about your printing services in Hyderabad.',
   },
   seo: {
@@ -24,7 +24,7 @@ export const siteConfig: SiteConfig = {
     primaryLabel: 'Get Quote on WhatsApp',
     secondaryLabel: 'Browse Categories',
     whatsappLabel: 'Chat on WhatsApp',
-    cartLabel: 'Add to Inquiry',
+    cartLabel: 'Add to Cart',
   },
   social: {
     instagram: '#',
