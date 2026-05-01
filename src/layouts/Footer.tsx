@@ -125,7 +125,7 @@ export function Footer() {
                     <Globe className="w-4 h-4" />
                   </a>
                 )}
-                {siteConfig.social.facebook && (
+                {/* {siteConfig.social.facebook && (
                   <a
                     href={siteConfig.social.facebook}
                     className="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
@@ -133,7 +133,7 @@ export function Footer() {
                   >
                     <Globe className="w-4 h-4" />
                   </a>
-                )}
+                )} */}
                 {siteConfig.social.twitter && (
                   <a
                     href={siteConfig.social.twitter}

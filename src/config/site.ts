@@ -27,7 +27,7 @@ export const siteConfig: SiteConfig = {
     cartLabel: 'Add to Cart',
   },
   social: {
-    instagram: '#',
+    instagram: 'https://www.instagram.com/printazeindia/',
     facebook: '#',
     twitter: '#',
   },
